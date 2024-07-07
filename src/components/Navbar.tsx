@@ -62,7 +62,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      {isOpen && <Sidebar />}
+      {isOpen && <Sidebar isOpen={isOpen} setOpen={setOpen}/>}
     </>
   );
 };
