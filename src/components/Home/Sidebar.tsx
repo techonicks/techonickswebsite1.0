@@ -16,6 +16,11 @@ const Sidebar = () => {
               </Link>
             </HoveredText>
             <HoveredText>
+              <Link href={"/team"} className="animate-textGlow">
+                Team
+              </Link>
+            </HoveredText>
+            <HoveredText>
               <Link href={"/mission"} className="animate-textGlow">
                 Mission
               </Link>
