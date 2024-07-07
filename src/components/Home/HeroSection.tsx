@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { HeroHighlight, Highlight } from "../ui/hero-highlight";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 const words = `There's no bound to one's imagination and capabilities. Your mind is ever curious, you just have to unlock it with precise pattern and set the condition to #NoLimitations.
 This group will be the rendezvous of ideas and upcoming event notifications as a part of our club. We hope this to become the perfect stepping stone for all our future technological endeavors within our college and beyond.

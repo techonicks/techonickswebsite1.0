@@ -4,10 +4,10 @@ import Image from "next/image";
 import image from "@/assets/Tech-o-nicks_logo-removebg-preview.png";
 import { Cairo, Poppins } from "next/font/google";
 import Link from "next/link";
-import HoveredText from "./HoveredText";
+import HoveredText from "./Home/HoveredText";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Home/Sidebar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "800" });
 const cairo = Cairo({ subsets: ["latin"], weight: "800" });
@@ -29,7 +29,7 @@ const Navbar = () => {
               TECH O NICKS
             </h1>
           </div>
-          <nav className="sm:flex gap-4 hidden">
+          <nav className="md:flex gap-4 hidden">
             <HoveredText>
               <Link href={"/"} className="animate-textGlow">
                 Home
@@ -41,13 +41,18 @@ const Navbar = () => {
               </Link>
             </HoveredText>
             <HoveredText>
+              <Link href={"/team"} className="animate-textGlow">
+                Team
+              </Link>
+            </HoveredText>
+            <HoveredText>
               <Link href={"/mission"} className="animate-textGlow">
                 Mission
               </Link>
             </HoveredText>
           </nav>
         </header>
-        <div className="sm:hidden px-2">
+        <div className="md:hidden px-2">
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}

@@ -1,5 +1,5 @@
 import React from "react"
-import { HoverBorderGradient } from "./ui/hover-border-gradient"
+import { HoverBorderGradient } from "../ui/hover-border-gradient"
 
 const HoveredText = ({children}:{children:React.ReactNode}) => {
   return (

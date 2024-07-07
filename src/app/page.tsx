@@ -1,6 +1,6 @@
-import { HeroSection } from "@/components/HeroSection";
-import MainContent from "@/components/MainContent";
-import MovingCardSection from "@/components/MovingCardSection";
+import { HeroSection } from "@/components/Home/HeroSection";
+import MainContent from "@/components/Home/MainContent";
+import MovingCardSection from "@/components/Home/MovingCardSection";
 
 
 export default function Home() {
