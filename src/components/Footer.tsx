@@ -23,12 +23,12 @@ const Footer = () => {
           >
             Coochbehar Government Engineering College
           </a>
-          <Link
-            href={"/"}
+          <a
+            href={"https://techonicks.github.io/MainSite/certificate.html"}
             className="hover:animate-textGlow hover:text-slate-300 duration-75"
           >
-            Dummy Link 1
-          </Link>
+            Verify your Certificate
+          </a>
           <Link
             href={"/"}
             className="hover:animate-textGlow hover:text-slate-300 duration-75"
