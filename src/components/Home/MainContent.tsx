@@ -63,7 +63,7 @@ const MainContent = () => {
               {item.title}
             </p>
  
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm  prose prose-sm prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}

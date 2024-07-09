@@ -24,7 +24,7 @@ export function HeroSection() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-5xl lg:text-3xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+        className="text-2xl px-4 md:text-5xl lg:text-3xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
       >
         <Highlight className="text-white">
           Tech o Nicks

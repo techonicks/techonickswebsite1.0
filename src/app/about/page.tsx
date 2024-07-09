@@ -10,9 +10,9 @@ const ubuntu = Ubuntu({ subsets: ["latin"], weight: "700" });
 
 const page = () => {
   return (
-    <div className="min-h-[60vh] w-full flex-col dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex justify-center">
+    <div className="min-h-[60vh] w-full flex-col bg-black bg-grid-white/[0.2]  relative flex justify-center">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
       <div className="w-full px-6 py-6 sm:px-20 md:px-20 flex flex-col">
         <div className="flex items-center justify-evenly flex-col min-[1060px]:flex-row px-2 sm:px-10">
           <Image

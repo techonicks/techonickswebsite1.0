@@ -59,6 +59,7 @@ const Navbar = () => {
             onToggle={() => {
               setOpen(!isOpen);
             }}
+            color="white"
           />
         </div>
       </div>

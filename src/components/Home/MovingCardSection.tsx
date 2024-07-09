@@ -36,7 +36,7 @@ const testimonials = [
 
 const MovingCardSection = () => {
   return (
-    <div className="h-[30rem] sm:h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.075] items-center justify-center relative overflow-hidden mt-20">
+    <div className="h-[30rem] sm:h-[40rem] rounded-md flex flex-col antialiased  bg-black bg-grid-white/[0.075] items-center justify-center relative overflow-hidden mt-20">
         <h1 className="absolute top-10 text-xl sm:text-3xl font-semibold">Glimpses of Tech O Nicks</h1>
       <InfiniteMovingCards
         items={testimonials}
