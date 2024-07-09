@@ -178,7 +178,7 @@ export const members = [
     img: samrat,
     link: "team/samrat-mondal",
     dept: "ME",
-    desc: "Hello 👋 I am Samrat Mondal from mechanical department 3rd year , with a immense desire to know about Web development and DSA",
+    desc: "Hello , I am Samrat Mondal from mechanical department 3rd year , with a immense desire to know about Web development and DSA",
     year: "3rd",
     social: [
       {

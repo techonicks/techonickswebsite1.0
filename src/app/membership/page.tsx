@@ -15,7 +15,7 @@ const page = () => {
         </h2>
         <p className="text-[1.2rem] mt-4 max-w-sm  text-neutral-300">
           Embark on an exciting journey of learning, growth, and innovation with
-          us. Together, let's push the boundaries of technology and make a
+          us. Together, let us push the boundaries of technology and make a
           lasting impact.
         </p>
       </div>
