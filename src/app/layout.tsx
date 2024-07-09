@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} min-h-screen custom-scrollbar`}>
+      <body className={`${poppins.className} min-h-screen custom-scrollbar bg-black`}>
         <Navbar/>
         {children}
         <Footer/>
