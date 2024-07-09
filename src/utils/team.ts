@@ -7,7 +7,7 @@ import mrittika from "@/assets/team/mrittika.png";
 import padmanava from "@/assets/team/padmanava.png";
 import pinku from "@/assets/team/pinku.png";
 import soukarya from "@/assets/team/soukarya.png";
-import sourav from "@/assets/team/Sourav.jpg";
+import sourav from "@/assets/team/sourav.jpg";
 import sayan from "@/assets/team/sayan.png";
 import sayan2 from "@/assets/team/sayan2.png";
 import sujay from "@/assets/team/sujay.png";
@@ -80,7 +80,7 @@ export const members = [
     img: ayan,
     link: "team/ayan-das",
     dept: "CSE",
-    desc: "Hello..I'm Ayan das... currently I'm in 2nd year cse department..I have a good knowledge in flutter which is mainly cover the app development domain..also I have a good grip in data structure and algorithms.. mostly I used Java language...also I'm contributing in open sources...",
+    desc: "Hello..I'm Ayan das... currently I'm in 3rd year cse department..I have a good knowledge in flutter which is mainly cover the app development domain..also I have a good grip in data structure and algorithms.. mostly I used Java language...also I'm contributing in open sources...",
     year: "3rd",
     social: [
       {
@@ -116,7 +116,7 @@ export const members = [
     img: mrittika,
     link: "team/mrittika-dutta",
     dept: "CSE",
-    desc: "I am Mrittika Dutta 2nd year Computer Science and Engineering student with keen interest in technology and enjoys exploring the latest innovations in the digital world.",
+    desc: "I am Mrittika Dutta 3rd year Computer Science and Engineering student with keen interest in technology and enjoys exploring the latest innovations in the digital world.",
     year: "3rd",
     social: [
       {
@@ -178,7 +178,7 @@ export const members = [
     img: samrat,
     link: "team/samrat-mondal",
     dept: "ME",
-    desc: "Hello 👋 I am Samrat Mondal from mechanical department 2nd year , with a immense desire to know about Web development and DSA",
+    desc: "Hello 👋 I am Samrat Mondal from mechanical department 3rd year , with a immense desire to know about Web development and DSA",
     year: "3rd",
     social: [
       {
