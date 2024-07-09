@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='mt-[120px]'>
+    <div className='pt-[120px]'>
         <HeroSection/>
     </div>
   )

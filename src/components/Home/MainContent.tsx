@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
-import devDrawPic from '@/assets/DEV-DRAW.png'
+import devDrawPic from '@/assets/eventPosters/DEV-DRAW.png'
 
 
 
@@ -51,7 +51,7 @@ const dummyContent = [
 const MainContent = () => {
   return (
     <TracingBeam className="px-6">
-        <div className="text-center text-2xl sm:text-4xl my-4 sm:my-6 font-semibold">Events</div>
+        <div className="text-center text-2xl sm:text-4xl my-4 sm:my-6 font-semibold relative">Events</div>
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">

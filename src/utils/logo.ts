@@ -12,7 +12,7 @@ import youtubeLogo from '@/assets/icons/youtubeLogo.svg'
 export const links = [
     {
         logo:discordLogo,
-        src: '/',
+        src: 'https://discord.gg/cvWX5Em9',
         name:"Discord"
     },
     {

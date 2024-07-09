@@ -5,7 +5,7 @@ import MovingCardSection from "@/components/Home/MovingCardSection";
 
 export default function Home() {
   return (
-    <main className="pt-16">
+    <main className="pt-[120px]">
       <HeroSection/>
       <MainContent/>
       <MovingCardSection/>

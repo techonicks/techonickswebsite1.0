@@ -50,3 +50,21 @@ body {
 .icon-glow:hover::before {
   @apply opacity-100;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(73, 190, 190, 0.463);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #202627;
+  border-radius: 6px;
+  border: 1px solid #152d5d;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #283fb1;
+}

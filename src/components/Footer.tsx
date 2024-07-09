@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center gap-3 text-[0.8rem] m-auto items-start w-full sm:w-auto">
           <Link
-            href="/"
+            href="/team"
             className="hover:animate-textGlow hover:text-slate-300 duration-75 "
           >
             Meet our core team

@@ -1,7 +1,7 @@
 
 const Map = () => {
   return (
-    <div className="rounded-md overflow-hidden w-full">
+    <div className="rounded-md overflow-hidden w-full border-2 border-glow-blue">
       <iframe src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Coochbehar%20governmet%20engineering%20college+(My%20Business%20Name)&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width={"100%"} height={"300"}>
       </iframe>
     </div>
