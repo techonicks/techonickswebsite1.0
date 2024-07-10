@@ -8,7 +8,7 @@ This group will be the rendezvous of ideas and upcoming event notifications as a
 
 `;
 
-export function HeroSection() {
+export default function HeroSection() {
   return (
     <HeroHighlight className="text-[1rem]">
       <motion.h1

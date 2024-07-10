@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components/Home/HeroSection";
+import HeroSection  from "@/components/Home/HeroSection";
 import MainContent from "@/components/Home/MainContent";
 import MovingCardSection from "@/components/Home/MovingCardSection";
 

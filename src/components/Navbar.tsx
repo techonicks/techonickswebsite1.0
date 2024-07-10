@@ -31,22 +31,22 @@ const Navbar = () => {
           </div>
           <nav className="lg:flex gap-4 hidden">
             <HoveredText>
-              <Link href={"/"} className="animate-textGlow">
+              <Link href={"/"} className="animate-textGlow" prefetch={false}>
                 Home
               </Link>
             </HoveredText>
             <HoveredText>
-              <Link href={"/about"} className="animate-textGlow">
+              <Link href={"/about"} className="animate-textGlow" prefetch={false}>
                 About
               </Link>
             </HoveredText>
             <HoveredText>
-              <Link href={"/team"} className="animate-textGlow">
+              <Link href={"/team"} className="animate-textGlow" prefetch={false}>
                 Team
               </Link>
             </HoveredText>
             <HoveredText>
-              <Link href={"/membership"} className="animate-textGlow">
+              <Link href={"/membership"} className="animate-textGlow" prefetch={false}>
                 Join Us
               </Link>
             </HoveredText>
