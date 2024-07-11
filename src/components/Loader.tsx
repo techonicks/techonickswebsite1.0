@@ -29,7 +29,7 @@ const Loader = () => {
         wrapperStyle={{}}
         wrapperClass="div"
       />
-      <span>{quote}</span>
+      <span className="text-center text-xl">{quote}</span>
     </div>
   );
 };

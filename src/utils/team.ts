@@ -58,9 +58,9 @@ export const members = [
     ],
   },
   {
-    title: "Anushka Majumder",
+    title: "Anushka Majumdar",
     img: anushka,
-    link: "team/anushka-majumder",
+    link: "team/anushka-majumdar",
     dept: "ME",
     desc: "Hello everyone,This is Anushka Majumdar of Mechanical Department . I would like to take you on a ride to unleash the layers of the technical Kingdom. Enlighten urself with the 'tech' aura with me as your content writing hostess",
     year: "3rd",

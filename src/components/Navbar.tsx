@@ -21,7 +21,7 @@ const Navbar = () => {
         <header className="px-2 w-[90%] md:px-10 flex items-center  justify-between">
           <div className="flex items-center sm:gap-4 gap-2">
             <Link href="/">
-              <Image src={image} alt="Logo" className="max-w-24" priority/>
+              <Image src={image} alt="Logo" className="max-w-24" priority />
             </Link>
             <h1
               className={`${cairo.className} text-xl sm:text-3xl animate-textGlow`}
@@ -30,26 +30,22 @@ const Navbar = () => {
             </h1>
           </div>
           <nav className="lg:flex gap-4 hidden">
-            <HoveredText>
-              <Link href={"/"} className="animate-textGlow" prefetch={false}>
-                Home
-              </Link>
-            </HoveredText>
-            <HoveredText>
-              <Link href={"/about"} className="animate-textGlow" prefetch={false}>
-                About
-              </Link>
-            </HoveredText>
-            <HoveredText>
-              <Link href={"/team"} className="animate-textGlow" prefetch={false}>
-                Team
-              </Link>
-            </HoveredText>
-            <HoveredText>
-              <Link href={"/membership"} className="animate-textGlow" prefetch={false}>
-                Join Us
-              </Link>
-            </HoveredText>
+            <Link href={"/"} className="animate-textGlow" prefetch={false}>
+              <HoveredText>Home</HoveredText>
+            </Link>
+            <Link href={"/about"} className="animate-textGlow" prefetch={false}>
+              <HoveredText>About</HoveredText>
+            </Link>
+            <Link href={"/team"} className="animate-textGlow" prefetch={false}>
+              <HoveredText>Team</HoveredText>
+            </Link>
+            <Link
+              href={"/membership"}
+              className="animate-textGlow"
+              prefetch={false}
+            >
+              <HoveredText>Join Us</HoveredText>
+            </Link>
           </nav>
         </header>
         <div className="lg:hidden px-2">
@@ -63,7 +59,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      {isOpen && <Sidebar isOpen={isOpen} setOpen={setOpen}/>}
+      {isOpen && <Sidebar isOpen={isOpen} setOpen={setOpen} />}
     </>
   );
 };
