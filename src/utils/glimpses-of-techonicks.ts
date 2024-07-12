@@ -5,15 +5,15 @@ import devDraw1 from '@/assets/devDraw/devDraw1.png'
 
 export const testimonials = [
   {
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus, 2",
+    name: "A web design competition where participants can illustrate their frontend skills",
     image: devDrawPic,
   },
   {
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus, 1",
+    name: "The very first bootcamp of Tech o nicks . In this 7 days bootcamp people learned about the basics of html , CSS and web basics",
     image: bootcamp1,
   },
   {
-    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et temporibus, 4",
+    name: "The nice presentation of a participant of Dev Draw , who is showing his/her project to the judges virtually",
     image: devDraw1,
   },
 ];
