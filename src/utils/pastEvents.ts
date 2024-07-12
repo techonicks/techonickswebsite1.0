@@ -7,7 +7,7 @@ export const pastEvents = [
     {
       title: "Dev Draw",
       description: (
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error deserunt rerum atque itaque dolor animi exercitationem voluptas alias, repellendus et totam est! Adipisci nam neque eos! Asperiores, debitis neque!"
+        "The first-ever DevDraw was a fantastic showcase of talent, creativity, and coding prowess. Participants dived into the challenge, creating visually stunning and highly functional websites with HTML, CSS, and JavaScript. The competition was fierce, but the spirit of innovation and dedication shone through, making the inaugural DevDraw such a success. More exciting iterations of DevDraw to come soon."
       ),
       image: devDrawPic,
     },

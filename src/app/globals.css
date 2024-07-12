@@ -67,6 +67,3 @@ body {
   border: 1px solid #152d5d;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #283fb1;
-}

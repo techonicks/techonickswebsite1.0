@@ -6,11 +6,11 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="grid grid-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 sm:px-10 py-10 bg-black ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:px-10 py-10 bg-black ">
         <div className="flex items-center justify-center w-full">
           <Map />
         </div>
-        <div className="flex flex-col justify-center gap-3 text-[0.8rem] m-auto items-start w-full sm:w-auto">
+        <div className="flex flex-col justify-center gap-3 text-[0.9rem] sm:text-[1rem] m-auto items-start w-full sm:w-auto">
           <Link
             href="/team"
             className="hover:animate-textGlow hover:text-slate-300 duration-75 "
@@ -30,10 +30,10 @@ const Footer = () => {
             Verify your Certificate
           </a>
           <Link
-            href={"/"}
+            href={"/leads"}
             className="hover:animate-textGlow hover:text-slate-300 duration-75"
           >
-            Dummy Link 2
+            Meet the in-charges
           </Link>
           <Link
             href={"/"}

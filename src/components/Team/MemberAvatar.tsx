@@ -30,7 +30,7 @@ const MemberAvatar = ({ member }: { member: member }) => {
     },
   ];
   return (
-    <div className="min-h-[80vh] w-[90%] sm:gap-20 flex items-center flex-col  gap-2 sm:flex-row py-6 px-3  sm:px-20">
+    <div className="min-h-[80vh] w-[90%] sm:gap-20 flex items-center flex-col  gap-2 lg:flex-row py-6 px-3  sm:px-20">
       <div className="">
         <Image
           src={member.img}
