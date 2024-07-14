@@ -4,6 +4,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
 import { pastEvents } from "@/utils/pastEvents";
+import Link from "next/link";
 
 const EventSection = () => {
   const [isUpcomingEnabled, setIsUpcomingEnabled] = useState(false);
@@ -46,13 +47,15 @@ const EventSection = () => {
 
                     <div className="text-sm  prose prose-sm prose-invert">
                       {item?.image && (
-                        <Image
-                          src={item.image}
-                          alt="blog thumbnail"
-                          height="1000"
-                          width="1000"
-                          className="rounded-lg mb-10 object-cover"
-                        />
+                        <Link href={item.link}>
+                          <Image
+                            src={item.image}
+                            alt="blog thumbnail"
+                            height="1000"
+                            width="1000"
+                            className="rounded-lg mb-10 object-cover"
+                          />
+                        </Link>
                       )}
                       {item.description}
                     </div>

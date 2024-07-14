@@ -26,7 +26,7 @@ const page = () => {
               <span className="text-[1.2rem] md:text-[1.4rem] font-bold">
                 {lead.title}
               </span>
-              <Link href={lead.link}>See Profile</Link>
+              <Link href={lead.link} className="self-start">See Profile</Link>
             </div>
           ))}
       </div>
@@ -47,7 +47,7 @@ const page = () => {
               <span className="text-[1.2rem] md:text-[1.4rem] font-bold">
                 {lead.title}
               </span>
-              <Link href={lead.link}>See Profile</Link>
+              <Link href={lead.link} className="self-start">See Profile</Link>
             </div>
           ))}
       </div>

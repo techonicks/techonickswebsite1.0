@@ -13,6 +13,18 @@ import sayan2 from "@/assets/team/sayan2.png";
 import sujay from "@/assets/team/sujay.png";
 import samrat from "@/assets/team/samrat.png";
 
+// extended core team
+
+import soumyajit from '@/assets/team/soumyajit.jpg'
+import aushi from '@/assets/team/aushi.png'
+import sayansarkar from '@/assets/team/sayansarkar.jpg'
+import arijit from '@/assets/team/arijit.jpg'
+import saswata from '@/assets/team/saswata.jpg'
+import raju from '@/assets/team/raju.jpg'
+import rakibul from '@/assets/team/rakibul.jpg'
+import fahim from '@/assets/team/fahim.jpg'
+import debanjan from '@/assets/team/debanjan.jpg'
+
 // Social icons
 
 import githubLogo from "@/assets/icons/githubLogo.svg";
@@ -281,4 +293,132 @@ export const members = [
       },
     ],
   },
+
+  // Extended core team 
+  {
+    title : "Soumyajit Pandit",
+    img : soumyajit,
+    link : '/team/extended-core-team/soumyajit-pandit',
+    dept : "ECE",
+    desc : "Driven by curiosity, fueled by technology, and committed to innovation.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Saswata Mukherjee",
+    img : saswata,
+    link : '/team/extended-core-team/saswata-mukherjee',
+    dept : "EE",
+    desc : "Technology is the canvas upon which I paint my ideas, constantly evolving with each line of code and innovative working models.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Raju Biswas",
+    img : raju,
+    link : '/team/extended-core-team/raju-biswas',
+    dept : "ME",
+    desc : "Hello, This is Raju Biswas, a second-year Mechanical Engineering student of CGEC. Driven by a passion for continuous skill enhancement and technical exploration, I am eager to delve into innovative projects and uncover opportunities that fuel my enthusiasm for technology. My goal is to grow as a dedicated tech enthusiast and make meaningful contributions to the engineering field.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Aushi Sarkar",
+    img : aushi,
+    link : '/team/extended-core-team/aushi-sarkar',
+    dept : "ECE",
+    desc : "The tech learning curve is steep, but the future belongs to those who can ride the wave.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Arijit Sinha Mahapatra",
+    img : arijit,
+    link : '/team/extended-core-team/arijit-sinha-mahapatra',
+    dept : "ECE",
+    desc : "I'm passionate about leveraging cutting-edge technology to solve real-world problems and am driven by the endless possibilities of innovation.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Sayan Sarkar",
+    img : sayansarkar,
+    link : '/team/extended-core-team/sayan-sarkar',
+    dept : "ECE",
+    desc : "Joining a tech club is like gaining a passport to the future—unlocking opportunities, fostering innovation, and building a network of like-minded enthusiasts who are passionate about shaping the world through technology",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Debanjan Chakraborty",
+    img : debanjan,
+    link : '/team/extended-core-team/debanjan-chakraborty',
+    dept : "ECE",
+    desc : "I believe in the power of continuous learning to transform ideas into impactful solutions.",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Rakibul Islam Mondal",
+    img : rakibul,
+    link : '/team/extended-core-team/rakibul-islam-mondal',
+    dept : "CSE",
+    desc : "Code like a Poetry should be minuscule and coherent",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  },
+  {
+    title : "Md Fahim Akhtab",
+    img : fahim,
+    link : '/team/extended-core-team/fahim-akhtab',
+    dept : "CSE",
+    desc : "Hardwork Beats Talent When Talent Doesn't Work Hard",
+    year : "2nd",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
+  }
 ];
