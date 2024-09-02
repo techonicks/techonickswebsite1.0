@@ -9,7 +9,7 @@ const HeroSection = ({year}:{year:string}) => {
       <div className="max-w-2xl mx-auto p-4">
         <h1 className="relative z-10  text-2xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
           {
-            year === "3rd" ? "Meet Our Core Team" : "Extended Core Team"
+            year === "3rd" ? <span className="line-clamp-5 text-center">Meet Our <br /> Core Team</span> : <span className="line-clamp-5 text-center">Extended <br /> Core Team</span>
           }
         </h1>
       </div>

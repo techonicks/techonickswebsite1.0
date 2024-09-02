@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Label } from "../ui/label";
-import { Input } from "../ui/input";
+import { Input, Select } from "../ui/input";
 import { cn } from "@/utils/cn";
 import { TextArea } from "../ui/textarea";
 import { SubmitData } from "@/app/api/action";
+import Swal from "sweetalert2";
+import { LoadingContext } from "@/context/loadingContext";
 
 function getCurrentDateTime() {
   const now = new Date();
@@ -21,6 +23,9 @@ function getCurrentDateTime() {
 }
 
 const JoinUsForm = () => {
+
+  const {handleToggleLoading} = useContext(LoadingContext)
+
   const [data, setData] = useState({
     name: "",
     department: "",
@@ -32,7 +37,26 @@ const JoinUsForm = () => {
 
   const handleSubmit = async () => {
     try {
-      // console.log(data);
+      if(data.department===""){
+        Swal.fire({
+          title : "Enter Valid Department",
+          icon : "warning",
+          background: "black",
+          color: "red",
+        })
+        handleToggleLoading(false)
+        return
+      }
+      else if(data.year===""){
+        Swal.fire({
+          title : "Enter Valid Year",
+          icon : "warning",
+          background: "black",
+          color: "red",
+        })
+        handleToggleLoading(false)
+        return
+      }
       const response = await SubmitData({
         name: data.name,
         department: data.department,
@@ -51,14 +75,32 @@ const JoinUsForm = () => {
         interestedFields: "",
         whyJoin: "",
       });
-      alert("Your response has been succesfully collected")
+      handleToggleLoading(false)
+      Swal.fire({
+        title: "Your Data has been recieved successfully",
+        icon: "success",
+        background: "#474c4f",
+        color: "cyan",
+      });
     } catch (error) {
-      console.log(error);
+      Swal.fire({
+        title : "Something went wrong",
+        text : "Failed to submit data",
+        icon : "error",
+        background: "black",
+        color: "red",
+      })
     }
   };
   return (
     <div className="max-w-md w-full rounded-none md:rounded-2xl px-4 md:px-8 shadow-input">
-      <form className="my-8" action={handleSubmit}>
+      <form
+        className="my-8"
+        action={() => {
+          handleToggleLoading(true)
+          handleSubmit()
+        }}
+      >
         <LabelInputContainer className="mb-4">
           <Label htmlFor="name">Name</Label>
           <Input
@@ -76,31 +118,24 @@ const JoinUsForm = () => {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="dept">Department</Label>
-            <Input
-              id="dept"
-              placeholder="Civil Engineering"
-              type="text"
-              name="Department"
-              value={data.department}
-              required
-              onChange={(e) =>
-                setData((prev) => ({ ...prev, department: e.target.value }))
-              }
-            />
+            <Select value={data.department} id="dept" onChange={(e)=>setData((prev)=>({...prev,department : e.target.value}))}>
+              <option value="" defaultChecked>Select Department</option>
+              <option value="CE">CE</option>
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="EE">EE</option>
+              <option value="ME">ME</option>
+            </Select>
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="year">Year</Label>
-            <Input
-              id="year"
-              placeholder="1st"
-              type="text"
-              name="Year"
-              value={data.year}
-              required
-              onChange={(e) =>
-                setData((prev) => ({ ...prev, year: e.target.value }))
-              }
-            />
+            <Select value={data.year} onChange={(e)=>setData((prev)=>({...prev,year : e.target.value}))}>
+              <option value="">Select Year</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+            </Select>
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
