@@ -52,7 +52,7 @@ const MemberAvatar = ({ member }: { member: member }) => {
             if (item.logo != null) {
               return (
                 <span className="py-8" key={i}>
-                  <a href={item.link} className="icon-glow">
+                  <a href={item.link} className="icon-glow" target="_blank">
                     <Image src={item.logo} alt="logo" className="max-w-10 " />
                   </a>
                 </span>

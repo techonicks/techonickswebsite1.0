@@ -35,12 +35,12 @@ const Footer = () => {
           >
             Meet the in-charges
           </Link>
-          <Link
+          {/* <Link
             href={"/"}
             className="hover:animate-textGlow hover:text-slate-300 duration-75"
           >
             Dummy Link 3
-          </Link>
+          </Link> */}
         </div>
         <div className="flex items-center gap-6 m-auto">
           {links.map((link, i) => (
