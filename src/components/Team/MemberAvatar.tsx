@@ -44,7 +44,7 @@ const MemberAvatar = ({ member }: { member: member }) => {
       <div className="flex flex-col px-3 flex-wrap">
         <TypewriterEffectSmooth words={words} />
         <div className="text-xl mb-4 text-blue-400">
-          {member.dept + " " + member.year + " " + "Year"}
+          {member.dept + " " + member.year + " "}
         </div>
         <div className="text-[1.1rem]">{member.desc}</div>
         <span className="flex gap-4">

@@ -16,7 +16,7 @@ const page = () => {
           .map((lead, i) => (
             <div
               key={i}
-              className="flex flex-col gap-3 p-4  bg-slate-800/[0.8] rounded"
+              className="flex flex-col gap-3 p-4  bg-slate-800/[0.8] rounded hover:shadow-[5px_5px_100px_5px_rgba(76,12,66,0.8)] duration-200"
             >
               <Image
                 src={lead.img}
@@ -30,7 +30,7 @@ const page = () => {
             </div>
           ))}
       </div>
-      <h1 className="text-center mt-10 text-xl md:text-3xl text-green-700">Session : 2022-23</h1>
+      {/* <h1 className="text-center mt-10 text-xl md:text-3xl text-green-700">Session : 2022-23</h1>
       <div className="flex flex-col md:flex-row justify-center items-center my-5 sm:my-8 md:my-10 gap-8 md:gap-20">
         {incharges
           .filter((lead) => lead.tenure === "2022-23")
@@ -50,7 +50,7 @@ const page = () => {
               <Link href={lead.link} className="self-start">See Profile</Link>
             </div>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 };

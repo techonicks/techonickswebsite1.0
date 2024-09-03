@@ -30,7 +30,6 @@ import debanjan from '@/assets/team/debanjan.jpg'
 import githubLogo from "@/assets/icons/githubLogo.svg";
 import instagramLogo from "@/assets/icons/instagramLogo.svg";
 import linkedinLogo from "@/assets/icons/linkedinLogo.svg";
-import facebookLogo from "@/assets/icons/facebookLogo.svg";
 
 export const members = [
   {
@@ -39,7 +38,7 @@ export const members = [
     link: "team/asif-mondal",
     dept: "CSE",
     desc: "I am a passionate and creative individual, always eager to learn and grow in pursuit of my goals and dreams.",
-    year: "3rd",
+    year: "2026",
     social: [
       {
         logo: instagramLogo,
@@ -56,26 +55,12 @@ export const members = [
     ],
   },
   {
-    title: "Abhishek Haldar",
-    img: abhishek,
-    link: "team/abhishek-haldar",
-    dept: "CSE",
-    desc: "Hello, I am Abhishek Haldar of CSE 3rd year. I love coding and gaming. I am currently working on app dev. My hobbies are reading books, watching movies and listening to songs.",
-    year: "3rd",
-    social: [
-      {
-        logo: null,
-        link: "#",
-      },
-    ],
-  },
-  {
     title: "Anushka Majumdar",
     img: anushka,
     link: "team/anushka-majumdar",
     dept: "ME",
     desc: "Hello everyone,This is Anushka Majumdar of Mechanical Department . I would like to take you on a ride to unleash the layers of the technical Kingdom. Enlighten urself with the 'tech' aura with me as your content writing hostess",
-    year: "3rd",
+    year: "2026",
     social: [
       {
         logo: instagramLogo,
@@ -88,48 +73,12 @@ export const members = [
     ],
   },
   {
-    title: "Ayan Das",
-    img: ayan,
-    link: "team/ayan-das",
-    dept: "CSE",
-    desc: "Hello..I'm Ayan das... currently I'm in 3rd year cse department..I have a good knowledge in flutter which is mainly cover the app development domain..also I have a good grip in data structure and algorithms.. mostly I used Java language...also I'm contributing in open sources...",
-    year: "3rd",
-    social: [
-      {
-        logo: null,
-        link: "#",
-      },
-    ],
-  },
-  {
-    title: "Debraj Mondal",
-    img: debraj,
-    link: "team/debraj-mondal",
-    dept: "CSE",
-    desc: "Meet Debraj Mondal, the spicy maestro of tech enchantment! With a sizzling fervor for web development and cloud computing, this code conjurer dances through the binary realms. Fluttering effortlessly in the Flutter development domain, I am determined to plunge into the depths of technology and emerge as a virtuoso of innovation.",
-    year: "3rd",
-    social: [
-      {
-        logo: instagramLogo,
-        link: "https://www.instagram.com/debuu.032/",
-      },
-      {
-        logo: githubLogo,
-        link: "https://github.com/debuuuu007",
-      },
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/debrajmondal007?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
     title: "Mrittika Dutta",
     img: mrittika,
     link: "team/mrittika-dutta",
     dept: "CSE",
     desc: "I am Mrittika Dutta 3rd year Computer Science and Engineering student with keen interest in technology and enjoys exploring the latest innovations in the digital world.",
-    year: "3rd",
+    year: "2026",
     social: [
       {
         logo: instagramLogo,
@@ -146,52 +95,12 @@ export const members = [
     ],
   },
   {
-    title: "Padmanava Das",
-    img: padmanava,
-    link: "team/padmanava-das",
-    dept: "CSE",
-    desc: "Hey there! I'm Padmanava Das, a 3rd year Computer Science Engineering student in CGEC . I'm working in Frontend Web Development, skilled in HTML, CSS, JavaScript and jQuery. Let's create some visually stunning interfaces!",
-    year: "3rd",
-    social: [
-      {
-        logo: instagramLogo,
-        link: "https://www.instagram.com/iam_padmanava?igsh=MTd1M2dldDhyM2Uycw==",
-      },
-      {
-        logo: githubLogo,
-        link: "https://github.com/Hack026",
-      },
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/padmanavadas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
-    title: "Pinku Mondal",
-    img: pinku,
-    link: "team/pinku-mondal",
-    dept: "CE",
-    desc: "Hey there! I'm Pinku Mondal, a 3rd year Civil Engineering student in CGEC .",
-    year: "3rd",
-    social: [
-      {
-        logo: instagramLogo,
-        link: "https://www.instagram.com/pi.nku896?igsh=b3A4bnU2ZXhvN2oz",
-      },
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/pinku-mondal-a9a37b318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
     title: "Samrat Mondal",
     img: samrat,
     link: "team/samrat-mondal",
     dept: "ME",
     desc: "Hello , I am Samrat Mondal from mechanical department 3rd year , with a immense desire to know about Web development and DSA",
-    year: "3rd",
+    year: "2026",
     social: [
       {
         logo: instagramLogo,
@@ -208,75 +117,21 @@ export const members = [
     ],
   },
   {
-    title: "Sujay Paul",
-    img: sujay,
-    link: "team/sujay-paul",
-    dept: "ME",
-    desc: "I'm Sujay Paul, a second-year student in the Mechanical Department. Proficient in AutoCAD, I'm passionate about transforming ideas into precise, innovative designs. I'm excited to explore new horizons in engineering and contribute to the world of mechanical innovation.",
-    year: "3rd",
-    social: [
-      {
-        logo: facebookLogo,
-        link: "https://www.facebook.com/sujay.paul.7771586?mibextid=ZbWKwL",
-      },
-      {
-        logo: instagramLogo,
-        link: "https://www.instagram.com/invincible_sujay_yt?igsh=MXZzb3FqZm5yOTByNA==",
-      },
-      {
-        logo: githubLogo,
-        link: "https://github.com/Sujay1234paul",
-      },
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/sujay-paul-307936229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
-    title: "Sourav Kumar",
-    img: sourav,
-    link: "team/sourav-kumar",
-    dept: "CSE",
-    desc: "Hello..I'm Sourav Kumar... currently I'm in 3rd year CSE department... I have a strong understanding of Cloud Computing and a solid grasp of data structures and algorithms. I'm highly enthusiastic about working with cloud systems.",
-    year: "3rd",
-    social: [
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/sourav-kumar-9aa033266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-    ],
-  },
-  {
-    title: "Sayan Chakraborty",
-    img: sayan2,
-    link: "team/sayan-chakraborty",
-    dept: "CE",
-    desc: "Hello, I'm Sayan Chakraborty, a passionate 2nd-year student pursuing a degree in Civil Engineering.",
-    year: "3rd",
-    social: [
-      {
-        logo: instagramLogo,
-        link: "https://instagram.com/sayan3.14?igshid=OGY3MTU3OGY1Mw==",
-      },
-      {
-        logo: linkedinLogo,
-        link: "https://www.linkedin.com/in/sayan-chakraborty-2a455621b",
-      },
-    ],
-  },
-  {
     title: "Soukarya Samanta",
     img: soukarya,
     link: "team/soukarya-samanta",
     dept: "CSE",
     desc: "Hey there, myself Soukarya Samanta from CSE department, batch of 2026.I'm primarily interested in data science. But, I also do Web Dev and GIS. Here's hoping that you will have a great experience as a member of Tech-o-nicks",
-    year: "3rd",
+    year: "2026",
     social: [
       {
-        logo: null,
-        link: "#",
+        logo: linkedinLogo,
+        link: "https://www.linkedin.com/in/soukarya-samanta",
       },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/TheZoom110'
+      }
     ],
   },
   {
@@ -285,11 +140,11 @@ export const members = [
     link: "team/sayan-sutradhar",
     dept: "CSE",
     desc: "This is me , Sayan Sutradhar CSE '26 batch , the tech enthusiast, want to add my part of professional assets through this club having a lot of interest in web development and data structures . Hoping will show you the greatest ever feel of development design coding and lot of more things . Warm regards",
-    year: "3rd",
+    year: "2026",
     social: [
       {
-        logo: null,
-        link: "#",
+        logo: githubLogo,
+        link: "https://github.com/SayanSutradhar1",
       },
     ],
   },
@@ -301,11 +156,15 @@ export const members = [
     link : '/team/extended-core-team/soumyajit-pandit',
     dept : "ECE",
     desc : "Driven by curiosity, fueled by technology, and committed to innovation.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
-        logo : null,
-        link : '#'
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/soumyajit-pandit-9b645622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+      },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/Soumyajit005'
       }
     ]
   },
@@ -315,7 +174,7 @@ export const members = [
     link : '/team/extended-core-team/saswata-mukherjee',
     dept : "EE",
     desc : "Technology is the canvas upon which I paint my ideas, constantly evolving with each line of code and innovative working models.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
         logo : null,
@@ -329,7 +188,7 @@ export const members = [
     link : '/team/extended-core-team/raju-biswas',
     dept : "ME",
     desc : "Hello, This is Raju Biswas, a second-year Mechanical Engineering student of CGEC. Driven by a passion for continuous skill enhancement and technical exploration, I am eager to delve into innovative projects and uncover opportunities that fuel my enthusiasm for technology. My goal is to grow as a dedicated tech enthusiast and make meaningful contributions to the engineering field.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
         logo : null,
@@ -343,11 +202,11 @@ export const members = [
     link : '/team/extended-core-team/aushi-sarkar',
     dept : "ECE",
     desc : "The tech learning curve is steep, but the future belongs to those who can ride the wave.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
-        logo : null,
-        link : '#'
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/ayushi-sarkar-98a023283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     ]
   },
@@ -357,7 +216,7 @@ export const members = [
     link : '/team/extended-core-team/arijit-sinha-mahapatra',
     dept : "ECE",
     desc : "I'm passionate about leveraging cutting-edge technology to solve real-world problems and am driven by the endless possibilities of innovation.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
         logo : null,
@@ -371,11 +230,19 @@ export const members = [
     link : '/team/extended-core-team/sayan-sarkar',
     dept : "ECE",
     desc : "Joining a tech club is like gaining a passport to the future—unlocking opportunities, fostering innovation, and building a network of like-minded enthusiasts who are passionate about shaping the world through technology",
-    year : "2nd",
+    year : "2027",
     social : [
       {
-        logo : null,
-        link : '#'
+        logo : instagramLogo,
+        link : 'https://www.instagram.com/itz_error404__?igsh=MWVsM29pYXdnZ2p5MA=='
+      },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/Sayan8945',
+      },
+      {
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/sayansarkar8945?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
       }
     ]
   },
@@ -385,7 +252,7 @@ export const members = [
     link : '/team/extended-core-team/debanjan-chakraborty',
     dept : "ECE",
     desc : "I believe in the power of continuous learning to transform ideas into impactful solutions.",
-    year : "2nd",
+    year : "2027",
     social : [
       {
         logo : null,
@@ -399,11 +266,19 @@ export const members = [
     link : '/team/extended-core-team/rakibul-islam-mondal',
     dept : "CSE",
     desc : "Code like a Poetry should be minuscule and coherent",
-    year : "2nd",
+    year : "2027",
     social : [
       {
-        logo : null,
-        link : '#'
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/rakibul-islam-mondal-4350b8287'
+      },
+      {
+        logo : instagramLogo,
+        link : 'https://www.instagram.com/sky.walk3r__?igsh=MWcyZGJzMWVhYm1ldA=='
+      },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/Rakibul440'
       }
     ]
   },
@@ -413,7 +288,7 @@ export const members = [
     link : '/team/extended-core-team/fahim-akhtab',
     dept : "CSE",
     desc : "Hardwork Beats Talent When Talent Doesn't Work Hard",
-    year : "2nd",
+    year : "2027",
     social : [
       {
         logo : null,

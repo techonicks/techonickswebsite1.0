@@ -7,6 +7,7 @@ import { TextArea } from "../ui/textarea";
 import { SubmitData } from "@/app/api/action";
 import Swal from "sweetalert2";
 import { LoadingContext } from "@/context/loadingContext";
+import { formValidator } from "@/utils/validators";
 
 function getCurrentDateTime() {
   const now = new Date();
@@ -37,26 +38,26 @@ const JoinUsForm = () => {
 
   const handleSubmit = async () => {
     try {
-      if(data.department===""){
-        Swal.fire({
-          title : "Enter Valid Department",
-          icon : "warning",
-          background: "black",
-          color: "red",
-        })
-        handleToggleLoading(false)
-        return
-      }
-      else if(data.year===""){
-        Swal.fire({
-          title : "Enter Valid Year",
-          icon : "warning",
-          background: "black",
-          color: "red",
-        })
-        handleToggleLoading(false)
-        return
-      }
+      // if(data.department===""){
+      //   Swal.fire({
+      //     title : "Enter Valid Department",
+      //     icon : "warning",
+      //     background: "black",
+      //     color: "red",
+      //   })
+      //   handleToggleLoading(false)
+      //   return
+      // }
+      // else if(data.year===""){
+      //   Swal.fire({
+      //     title : "Enter Valid Year",
+      //     icon : "warning",
+      //     background: "black",
+      //     color: "red",
+      //   })
+      //   handleToggleLoading(false)
+      //   return
+      // }
       const response = await SubmitData({
         name: data.name,
         department: data.department,
@@ -105,7 +106,9 @@ const JoinUsForm = () => {
       <form
         className="my-8"
         action={() => {
-          handleSubmit()
+          if(formValidator(data)){
+            handleSubmit()
+          }
         }}
       >
         <LabelInputContainer className="mb-4">
@@ -115,7 +118,6 @@ const JoinUsForm = () => {
             placeholder="Alan Turing"
             type="text"
             name="Name"
-            required
             value={data.name}
             onChange={(e) =>
               setData((prev) => ({ ...prev, name: e.target.value }))
@@ -156,7 +158,7 @@ const JoinUsForm = () => {
             onChange={(e) =>
               setData((prev) => ({ ...prev, email: e.target.value }))
             }
-            required
+            // required
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
@@ -170,7 +172,7 @@ const JoinUsForm = () => {
             onChange={(e) =>
               setData((prev) => ({ ...prev, interestedFields: e.target.value }))
             }
-            required
+            // required
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
@@ -184,14 +186,18 @@ const JoinUsForm = () => {
             onChange={(e) =>
               setData((prev) => ({ ...prev, whyJoin: e.target.value }))
             }
-            required
+            // required
           />
         </LabelInputContainer>
 
         <button
           className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
-          onClick={()=>handleToggleLoading(true)}
+          onClick={()=>{
+            if(formValidator(data)){
+              handleToggleLoading(true)
+            }
+          }}
         >
           Send &rarr;
           <BottomGradient />

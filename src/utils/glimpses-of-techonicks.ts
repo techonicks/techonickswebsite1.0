@@ -1,7 +1,7 @@
 import devDrawPic from "@/assets/eventPosters//DEV-DRAW.png";
-import combatPic from "@/assets/eventPosters/Combat.png";
 import bootcamp1 from "@/assets/worshop/bootcamp1.png";
 import devDraw1 from '@/assets/devDraw/devDraw1.png'
+import devDrawWinners from '@/assets/devDraw/devDrawWinners.png'
 
 export const testimonials = [
   {
@@ -16,4 +16,8 @@ export const testimonials = [
     name: "The nice presentation of a participant of Dev Draw , who is showing his/her project to the judges virtually",
     image: devDraw1,
   },
+  {
+    name : "Soumyajit and Biraj, have proved that they can capture the web titles by their own frontend skills , Dev draw winners",
+    image : devDrawWinners
+  }
 ];

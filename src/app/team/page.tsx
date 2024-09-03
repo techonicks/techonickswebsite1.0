@@ -4,7 +4,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className='pt-[120px]'>
-        <HeroSection year='3rd'/>
+        <HeroSection year='2026'/>
     </div>
   )
 }
