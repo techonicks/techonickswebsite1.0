@@ -118,7 +118,7 @@ const page = () => {
               fellow tech enthusiasts - Showcase your projects and ideas - Learn
               from industry experts and alumni At Tech-O-Nicks, we're shaping the
               future of technology, together. Come be a part of our community
-              and let's innovate, create, and inspire!
+              and let's innovate, create, and inspire!
             </p>
             <Image
               src={drPDas}
