@@ -101,7 +101,7 @@ const page = () => {
           <div className="flex flex-col-reverse lg:flex-row-reverse sm:gap-10 sm:px-8">
             <p className="text-[1.1rem] sm:text-xl relative z-20 my-4">
               Welcome to Tech-O-Nicks, the vibrant technology club of Cooch Behar
-              Government Engineering College! We're a multidisciplinary
+              Government Engineering College! We are a multidisciplinary
               community that brings together innovators, thinkers, and
               problem-solvers from all departments to explore, learn, and
               create. At Tech-O-Nicks, we believe in the power of technology to
@@ -111,14 +111,14 @@ const page = () => {
               interactions that foster collaboration, creativity, and
               skill-building. Our events are designed to be inclusive,
               interactive, and informative, covering a wide range of topics from
-              AI and data science to cybersecurity, coding, and more. We're not
+              AI and data science to cybersecurity, coding, and more. We are not
               limited by departmental boundaries, and our members come from
               diverse backgrounds, united by a shared passion for technology.
               Join us to: - Expand your knowledge and skills - Network with
               fellow tech enthusiasts - Showcase your projects and ideas - Learn
-              from industry experts and alumni At Tech-O-Nicks, we're shaping the
+              from industry experts and alumni At Tech-O-Nicks, we are shaping the
               future of technology, together. Come be a part of our community
-              and let's innovate, create, and inspire!
+              and let us innovate, create, and inspire!
             </p>
             <Image
               src={drPDas}
