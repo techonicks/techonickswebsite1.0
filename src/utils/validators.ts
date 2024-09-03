@@ -66,7 +66,7 @@ export const formValidator  = (student : Student)=>{
     }
     if(student.interestedFields===""){
         Swal.fire({
-            title: 'Enter a Interested fields',
+            title: 'Enter Interested fields',
             width : 400,
             icon: 'warning',
             timer: 2500, 
@@ -79,7 +79,7 @@ export const formValidator  = (student : Student)=>{
     }
     if(student.whyJoin===""){
         Swal.fire({
-            title: 'Enter a some words about joining',
+            title: 'Enter some words why you want to join',
             width : 400,
             icon: 'warning',
             timer: 2500, 
