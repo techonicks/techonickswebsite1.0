@@ -36,6 +36,7 @@ const JoinUsForm = () => {
   });
 
   const handleSubmit = async () => {
+    handleToggleLoading(true)
     try {
       if(data.department===""){
         Swal.fire({
@@ -65,7 +66,7 @@ const JoinUsForm = () => {
         interestedFields: data.interestedFields,
         whyJoin: data.whyJoin,
         timeStamp: getCurrentDateTime(),
-      });
+      })
       console.log(response);
       setData({
         name: "",
@@ -97,7 +98,6 @@ const JoinUsForm = () => {
       <form
         className="my-8"
         action={() => {
-          handleToggleLoading(true)
           handleSubmit()
         }}
       >
