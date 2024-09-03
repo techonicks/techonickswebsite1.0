@@ -1,9 +1,11 @@
-import React from 'react'
+"use client"
+import { LoadingContext } from '@/context/loadingContext'
+import React, { useContext } from 'react'
 import { Triangle } from 'react-loader-spinner'
 
 const FormSubmitLoader = () => {
   return (
-    <div className='h-[200px] w-[300px] md:h-[300px] md:w-[400px] px-4 fixed top-[50vh] translate-y-[-50%] left-[50%] translate-x-[-50%]  flex justify-center items-center flex-col gap-5 z-40 bg-black'>
+    <div className='h-screen w-screen px-4 fixed top-[50vh] translate-y-[-50%] left-[50%] translate-x-[-50%]  flex justify-center items-center flex-col gap-5 z-40 bg-black/50 rounded backdrop-blur-sm'>
         <Triangle
         visible={true}
         // height="200"

@@ -36,7 +36,6 @@ const JoinUsForm = () => {
   });
 
   const handleSubmit = async () => {
-    handleToggleLoading(true)
     try {
       if(data.department===""){
         Swal.fire({
@@ -78,18 +77,26 @@ const JoinUsForm = () => {
       });
       handleToggleLoading(false)
       Swal.fire({
-        title: "Your Data has been recieved successfully",
-        icon: "success",
-        background: "#474c4f",
-        color: "cyan",
-      });
+        title: 'Congrats',
+        width : 400,
+        text: 'Your Data has been recieved successfully',
+        icon: 'success',
+        timer: 2500, 
+        timerProgressBar: true, 
+        showConfirmButton: false, 
+        background : '#474c4f',
+        color : 'cyan'
+      })
     } catch (error) {
       Swal.fire({
-        title : "Something went wrong",
-        text : "Failed to submit data",
-        icon : "error",
-        background: "black",
-        color: "red",
+        title: 'Something went wrong',
+        text: 'Failed to submit data',
+        icon: 'error',
+        timer: 2500, 
+        timerProgressBar: true, 
+        showConfirmButton: false,
+        background : '#474c4f',
+        color : 'red'
       })
     }
   };
@@ -184,6 +191,7 @@ const JoinUsForm = () => {
         <button
           className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
+          onClick={()=>handleToggleLoading(true)}
         >
           Send &rarr;
           <BottomGradient />
