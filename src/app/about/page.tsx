@@ -95,7 +95,7 @@ const page = () => {
               <span>Meet</span> <br />{" "}
               <span className="text-cyan-600 my-4">Dr. Palash Das</span> Sir
               <br />
-              <span className="my-3 text-xl text-center">HOD , Electronics & Communication Enginnering , CGEC</span>
+              <span className="my-3 text-xl text-center">HOD , Electronics & Communication Engineering, CGEC</span>
             </div>
           </div>
           <div className="flex flex-col-reverse lg:flex-row-reverse sm:gap-10 sm:px-8">

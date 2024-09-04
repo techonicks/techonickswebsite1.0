@@ -1,6 +1,7 @@
 import devDrawPic from "@/assets/eventPosters/DEV-DRAW.png";
 import combatPic from "@/assets/eventPosters/Combat.png";
 import comingSoon from '@/assets/coming-soon.jpg'
+import combat2 from '@/assets/eventPosters/combat2.jpg'
 
 
 
@@ -32,4 +33,13 @@ export const pastEvents = [
       image: comingSoon,
       link : 'events/induction-program'
     },
+    {
+      type : "upcoming",
+      title : "Combat 2.0",
+      description : (
+        "Coming Soon"
+      ),
+      image : combat2,
+      link : 'event/combat2'
+    }
   ];

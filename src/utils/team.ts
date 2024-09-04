@@ -24,6 +24,7 @@ import raju from '@/assets/team/raju.jpg'
 import rakibul from '@/assets/team/rakibul.jpg'
 import fahim from '@/assets/team/fahim.jpg'
 import debanjan from '@/assets/team/debanjan.jpg'
+import soumyajitbhunia from '@/assets/team/soumyajitbhunia.jpg'
 
 // Social icons
 
@@ -293,6 +294,24 @@ export const members = [
       {
         logo : null,
         link : '#'
+      }
+    ]
+  },
+  {
+    title : "Soumyajit Bhunia",
+    img : soumyajitbhunia,
+    link : '/team/extended-core-team/soumyajit-bhunia',
+    dept : "CE",
+    desc : "Be the best version of yourself",
+    year : "2027",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/soumyajit-bhunia-592950240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      },
+      {
+        logo : instagramLogo,
+        link : 'https://www.instagram.com/soumyajit_bhunia_2204?igsh=cTFwdWpqYTd0cjE='
       }
     ]
   }
