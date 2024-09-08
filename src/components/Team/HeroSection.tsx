@@ -14,7 +14,7 @@ const HeroSection = ({year}:{year:string}) => {
         </h1>
       </div>
       <Profiles year={year}/>
-      <Link href={`/team/${year === "2026"? "extended-core-team" : ""}`} className="md:text-3xl sm:text-xl bg-cyan-900 font-semibold px-4 py-2 self-center z-20 relative rounded-md ">{year === "2026" ? "Extended Core Team" : "Main Core Team"}</Link>
+      <Link href={`/team/${year === "2026"? "extended-core-team" : ""}`} className="md:text-3xl sm:text-xl bg-cyan-900 font-semibold px-4 py-2 self-center z-10 relative rounded-md ">{year === "2026" ? "Extended Core Team" : "Main Core Team"}</Link>
       <BackgroundBeams />
     </div>
   );

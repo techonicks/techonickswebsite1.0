@@ -118,6 +118,20 @@ export const members = [
     ],
   },
   {
+    title: "Sourav Kumar",
+    img: sourav,
+    link: "team/sourav-kumar",
+    dept: "CSE",
+    desc: "Hello..I am Sourav Kumar... currently I am in 3rd year CSE department... I have a strong understanding of Cloud Computing and a solid grasp of data structures and algorithms. I am highly enthusiastic about working with cloud systems",
+    year: "2026",
+    social: [
+      {
+        logo: linkedinLogo,
+        link: "https://www.linkedin.com/in/sourav-kumar-9aa033266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+  },
+  {
     title: "Soukarya Samanta",
     img: soukarya,
     link: "team/soukarya-samanta",
