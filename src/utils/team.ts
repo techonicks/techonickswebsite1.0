@@ -1,5 +1,5 @@
 import asif from "@/assets/team/asif.png";
-import abhishek from "@/assets/team/abhishek.png";
+import abhishek from "@/assets/team/abhisek2.jpg";
 import anushka from "@/assets/team/anushka.png";
 import ayan from "@/assets/team/ayan.png";
 import debraj from "@/assets/team/debraj.png";
@@ -130,6 +130,20 @@ export const members = [
         link: "https://www.linkedin.com/in/sourav-kumar-9aa033266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     ],
+  },
+  {
+    title : "Abhishek Haldar",
+    img : abhishek,
+    link : "team/abhishek-haldar",
+    dept : "CSE",
+    desc : "Hello, I am Abhishek Haldar, a Computer Science and Engineering (CSE) student. I have a strong passion for coding and gaming. Currently, I am working on app development. In my free time, I enjoy reading books, watching movies, and listening to music.",
+    year : "2026",
+    social : [
+      {
+        logo : null,
+        link : '#'
+      }
+    ]
   },
   {
     title: "Soukarya Samanta",
