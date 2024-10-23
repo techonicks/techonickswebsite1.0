@@ -25,6 +25,7 @@ import rakibul from '@/assets/team/rakibul.jpg'
 import fahim from '@/assets/team/fahim.jpg'
 import debanjan from '@/assets/team/debanjan.jpg'
 import soumyajitbhunia from '@/assets/team/soumyajitbhunia.jpg'
+import javed from '@/assets/team/javed.jpg'
 
 // Social icons
 
@@ -340,6 +341,24 @@ export const members = [
       {
         logo : instagramLogo,
         link : 'https://www.instagram.com/soumyajit_bhunia_2204?igsh=cTFwdWpqYTd0cjE='
+      }
+    ]
+  },
+  {
+    title : "Seikh Mahammad javed",
+    img : javed,
+    link : '/team/extended-core-team/seikh-mahammad-javed',
+    dept : "CSE",
+    desc : "As a second-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
+    year : "2027",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/seikh-mahammad-javed-ba29b4215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/__j_a_v_e_d_/"
       }
     ]
   }
