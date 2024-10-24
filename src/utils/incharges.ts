@@ -8,6 +8,7 @@ import soukarya from "@/assets/team/soukarya.png";
 import javed from '@/assets/team/javed.jpg';
 import saswata from '@/assets/team/saswata.jpg';
 import soumyajit from '@/assets/team/soumyajit.jpg';
+import soumyajit2 from '@/assets/team/soumyajit2.jpg'
 
 export const incharges = [
   {
@@ -61,7 +62,7 @@ export const incharges = [
   // },
   {
     title: "Soumyajit Pandit",
-    img: soumyajit,
+    img: soumyajit2,
     link: "leads/soumyajit-pandit",
     dept: "ECE",
     desc: "Driven by curiosity, fueled by technology, and committed to innovation.",

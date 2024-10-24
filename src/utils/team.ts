@@ -16,6 +16,7 @@ import samrat from "@/assets/team/samrat.png";
 // extended core team
 
 import soumyajit from '@/assets/team/soumyajit.jpg'
+import soumyajit2 from '@/assets/team/soumyajit2.jpg'
 import aushi from '@/assets/team/aushi.png'
 import sayansarkar from '@/assets/team/sayansarkar.jpg'
 import arijit from '@/assets/team/arijit.jpg'
@@ -315,7 +316,7 @@ export const members = [
   },
   {
     title : "Soumyajit Pandit",
-    img : soumyajit,
+    img : soumyajit2,
     link : 'team/soumyajit-pandit',
     dept : "ECE",
     desc : "Driven by curiosity, fueled by technology, and committed to innovation.",
