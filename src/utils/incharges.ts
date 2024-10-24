@@ -94,7 +94,7 @@ export const incharges = [
     ],
   },
   {
-    title: "Seikh Mahammad javed",
+    title: "Seikh Mahammad Javed",
     img: javed,
     link: "leads/seikh-mahammad-javed",
     dept : "CSE",
