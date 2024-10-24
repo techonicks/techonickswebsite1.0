@@ -346,7 +346,7 @@ export const members = [
     ]
   },
   {
-    title : "Seikh Mahammad javed",
+    title : "Seikh Mahammad Javed",
     img : javed,
     link : '/team/extended-core-team/seikh-mahammad-javed',
     dept : "CSE",
