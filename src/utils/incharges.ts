@@ -1,7 +1,14 @@
+import instagramLogo  from '@/assets/icons/instagramLogo.svg';
 import githubLogo  from '@/assets/icons/githubLogo.svg';
 import linkedinLogo from "@/assets/icons/linkedinLogo.svg";
+
 import sayan from "@/assets/team/sayan.png";
 import soukarya from "@/assets/team/soukarya.png";
+
+import javed from '@/assets/team/javed.jpg';
+import saswata from '@/assets/team/saswata.jpg';
+import soumyajit from '@/assets/team/soumyajit.jpg';
+
 export const incharges = [
   {
     title: "Soukarya Samanta",
@@ -52,4 +59,57 @@ export const incharges = [
   //     },
   //   ],
   // },
+  {
+    title: "Soumyajit Pandit",
+    img: soumyajit,
+    link: "leads/soumyajit-pandit",
+    dept: "ECE",
+    desc: "Driven by curiosity, fueled by technology, and committed to innovation.",
+    year: "2027",
+    tenure: "2024-25",
+    social: [
+      {
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/soumyajit-pandit-9b645622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+      },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/Soumyajit005'
+      }
+    ],
+  },
+  {
+    title: "Saswata Mukherjee",
+    img: saswata,
+    link: "leads/saswata",
+    dept: "CSE",
+    desc: "Technology is the canvas upon which I paint my ideas, constantly evolving with each line of code and innovative working models.",
+    year: "2027",
+    tenure: "2024-25",
+    social: [
+      {
+        logo : null,
+        link : '#'
+      }
+    ],
+  },
+  {
+    title: "Seikh Mahammad javed",
+    img: javed,
+    link: "leads/seikh-mahammad-javed",
+    dept : "CSE",
+    desc : "As a second-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
+    year : "2027",
+    tenure: "2024-25",
+    social: [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/seikh-mahammad-javed-ba29b4215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/__j_a_v_e_d_/"
+      }
+    ],
+  }
 ];

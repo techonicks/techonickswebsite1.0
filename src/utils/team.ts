@@ -180,38 +180,7 @@ export const members = [
   },
 
   // Extended core team 
-  {
-    title : "Soumyajit Pandit",
-    img : soumyajit,
-    link : '/team/extended-core-team/soumyajit-pandit',
-    dept : "ECE",
-    desc : "Driven by curiosity, fueled by technology, and committed to innovation.",
-    year : "2027",
-    social : [
-      {
-        logo : linkedinLogo,
-        link : 'https://www.linkedin.com/in/soumyajit-pandit-9b645622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
-      },
-      {
-        logo : githubLogo,
-        link : 'https://github.com/Soumyajit005'
-      }
-    ]
-  },
-  {
-    title : "Saswata Mukherjee",
-    img : saswata,
-    link : '/team/extended-core-team/saswata-mukherjee',
-    dept : "EE",
-    desc : "Technology is the canvas upon which I paint my ideas, constantly evolving with each line of code and innovative working models.",
-    year : "2027",
-    social : [
-      {
-        logo : null,
-        link : '#'
-      }
-    ]
-  },
+  
   {
     title : "Raju Biswas",
     img : raju,
@@ -341,6 +310,38 @@ export const members = [
       {
         logo : instagramLogo,
         link : 'https://www.instagram.com/soumyajit_bhunia_2204?igsh=cTFwdWpqYTd0cjE='
+      }
+    ]
+  },
+  {
+    title : "Soumyajit Pandit",
+    img : soumyajit,
+    link : '/team/extended-core-team/soumyajit-pandit',
+    dept : "ECE",
+    desc : "Driven by curiosity, fueled by technology, and committed to innovation.",
+    year : "2027",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/soumyajit-pandit-9b645622b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+      },
+      {
+        logo : githubLogo,
+        link : 'https://github.com/Soumyajit005'
+      }
+    ]
+  },
+  {
+    title : "Saswata Mukherjee",
+    img : saswata,
+    link : '/team/extended-core-team/saswata-mukherjee',
+    dept : "EE",
+    desc : "Technology is the canvas upon which I paint my ideas, constantly evolving with each line of code and innovative working models.",
+    year : "2027",
+    social : [
+      {
+        logo : null,
+        link : '#'
       }
     ]
   },
