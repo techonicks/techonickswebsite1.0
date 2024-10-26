@@ -1,7 +1,7 @@
 "use server"
 
 import dbConnect from "@/lib/db/dbConnect";
-import  Student  from "@/models/studentModel";
+import  Student  from "@/models/student.model";
 
 type StudentData = {
     name : string,

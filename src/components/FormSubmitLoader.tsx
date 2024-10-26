@@ -1,6 +1,5 @@
 "use client"
-import { LoadingContext } from '@/context/loadingContext'
-import React, { useContext } from 'react'
+import React from 'react'
 import { Triangle } from 'react-loader-spinner'
 
 const FormSubmitLoader = () => {

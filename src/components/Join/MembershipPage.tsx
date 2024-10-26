@@ -1,6 +1,6 @@
 "use client";
 
-import LoadingContextProvider from "@/context/loadingContext";
+import LoadingContextProvider from "@/context/loading.context";
 import React, { useState } from "react";
 import FormSubmitLoader from "../FormSubmitLoader";
 
