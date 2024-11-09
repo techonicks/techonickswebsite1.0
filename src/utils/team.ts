@@ -1,3 +1,5 @@
+// core team 23
+
 import asif from "@/assets/team/asif.png";
 import abhishek from "@/assets/team/abhisek2.jpg";
 import anushka from "@/assets/team/anushka.png";
@@ -13,7 +15,7 @@ import sayan2 from "@/assets/team/sayan2.png";
 import sujay from "@/assets/team/sujay.png";
 import samrat from "@/assets/team/samrat.png";
 
-// extended core team
+// core team 24
 
 import soumyajit from '@/assets/team/soumyajit.jpg'
 import soumyajit2 from '@/assets/team/soumyajit2.jpg'
@@ -27,6 +29,7 @@ import fahim from '@/assets/team/fahim.jpg'
 import debanjan from '@/assets/team/debanjan.jpg'
 import soumyajitbhunia from '@/assets/team/soumyajitbhunia.jpg'
 import javed from '@/assets/team/javed.jpg'
+import suvra from '@/assets/team/suvra.jpg'
 
 // Social icons
 
@@ -180,7 +183,7 @@ export const members = [
     ],
   },
 
-  // Extended core team 
+  // core team 24 
   
   {
     title : "Raju Biswas",
@@ -311,6 +314,24 @@ export const members = [
       {
         logo : instagramLogo,
         link : 'https://www.instagram.com/soumyajit_bhunia_2204?igsh=cTFwdWpqYTd0cjE='
+      }
+    ]
+  },
+  {
+    title : "Suvra Dutta",
+    img : suvra,
+    link : 'team/suvra-dutta',
+    dept : "CSE",
+    desc : "Introduction A dynamic leader with a passion for teamwork, i'm a cool-headed problem-solver who isn't afraid to take charge when the situation calls for it. With a strong interest in coding and space technology, i bring a tech-savvy perspective to any project i take on. I'm adventurous and always ready to explore new places, embracing the thrill of travel and discovery. My open-mindedness and enthusiasm for collaboration make me a natural at working with others, and my ambition drives me to excel in every endeavor.",
+    year : "2027",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : 'https://www.linkedin.com/in/suvra-dutta-919256291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      },
+      {
+        logo : instagramLogo,
+        link : 'https://www.instagram.com/phenomenal_suvra?igsh=MXdhYnF1dmhkbW93YQ=='
       }
     ]
   },
