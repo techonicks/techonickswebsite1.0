@@ -2,6 +2,8 @@ import devDrawPic from "@/assets/eventPosters/DEV-DRAW.png";
 import combatPic from "@/assets/eventPosters/Combat.png";
 import comingSoon from '@/assets/coming-soon.jpg'
 import combat2 from '@/assets/eventPosters/combat2.jpg'
+import roboticsBootcamp from '@/assets/eventPosters/RoboticsBootcamp.jpg';
+import inductionProgram2024 from '@/assets/eventPosters/inductionProgram2024.png'
 
 
 
@@ -25,12 +27,12 @@ export const pastEvents = [
       link : 'events/combat'
     },
     {
-      type : "upcoming",
+      type : "past",
       title: "Induction Program",
       description: (
-        "Coming Soon"
+        "Induction Program 2024 for newly admitted 1st year students"
       ),
-      image: comingSoon,
+      image: inductionProgram2024,
       link : 'events/induction-program'
     },
     {
@@ -41,5 +43,14 @@ export const pastEvents = [
       ),
       image : combat2,
       link : 'event/combat2'
+    },
+    {
+      type : "upcoming",
+      title : "Introduction to Robotics Bootcamp",
+      description : (
+        "Coming Soon"
+      ),
+      image : roboticsBootcamp,
+      link : 'events/introduction-to-robotics-bootcamp'
     }
   ];
