@@ -21,7 +21,7 @@ export const pastEvents = [
       type : "past",
       title: "Combat CGEC",
       description: (
-        "C-OMBAT 2023 was the first event organized by the First Year students of the 2022–26 batch of Coochbehar Government Engineering College.The competitive event was organized for fellow first year students, including first-time coders, based exclusively on C programming language, to provide them with a level playing ground to allow them to showcase their logical skills, irrespective of their past associations with coding at the school level, which is usually based on Python or Java."
+        "C-OMBAT 2023 was the first event organized by the First Year students of the 2022–26 batch of Coochbehar Government Engineering College.The competitive event was organized for fellow first year students, including first-time coders, based exclusively on C programming language, to provide them with a level playing ground to allow them to showcase their logical skills, irrespective of their past associations with coding at the school level, which is usually based on Python or Java." 
       ),
       image: combatPic,
       link : 'events/combat'
@@ -48,7 +48,7 @@ export const pastEvents = [
       type : "ongoing",
       title : "Introduction to Robotics Bootcamp",
       description : (
-        "We are excited to announce that Tech-O-Nicks, the Tech Club of CGEC, is organizing a 1 WEEK Hardware Workshop on Introduction to Robotics starting on 19th November. This workshop is designed to help students to learn Robotics and Build Unique Projects.This Workshop Focus on Basic Concepts of robotics, like Basic Electronics, Circuit Design, Microcontroller Programming and building Projects etc.\n📌 Details of the Workshop: \nDuration: 1 Week \n📅 Starts on: 19th November \n⏰ Time: 4:00 PM (daily) \n📍Venue: AC112 (CGEC) \n📌 What You’ll Learn: \NBasic Electronics, Circuit Design, Arduino Training, C++ For Arduino, building Mini-projects, Arduino Projects, line following Robot etc.\n📌 Point : Regular attendees with minimum 80% overall attendance of the entire workshop will be certified by TECH O NICKS Club\nJoin us , it will be a great opportunity to start learning Robotics. ❤✨"
+        'We are excited to announce that Tech-O-Nicks, the Tech Club of CGEC, is organizing a 1 WEEK Hardware Workshop on Introduction to Robotics starting on 19th November. This workshop is designed to help students to learn Robotics and Build Unique Projects.This Workshop Focus on Basic Concepts of robotics, like Basic Electronics, Circuit Design, Microcontroller Programming and building Projects etc.'
       ),
       image : roboticsBootcamp,
       link : 'events/introduction-to-robotics-bootcamp'
