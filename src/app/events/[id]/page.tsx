@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { pastEvents } from "@/utils/pastEvents";
+import { pastEvents } from "@/utils/AllEvents";
 import React from "react";
 
 const page = ({ params }: any) => {
