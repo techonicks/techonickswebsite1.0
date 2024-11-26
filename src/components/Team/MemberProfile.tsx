@@ -1,21 +1,10 @@
 import React from "react";
 import MemberAvatar from "./MemberAvatar";
-import { StaticImageData } from "next/image";
+import { Member } from "@/interfaces/member.interface";
 
-interface member {
-  title: string;
-  img: StaticImageData;
-  link: string;
-  dept: string;
-  desc: string;
-  year: string;
-  social: {
-    logo: StaticImageData;
-    link: string;
-  }[];
-}
 
-const MemberProfile = ({ member }: { member: member }) => {
+
+const MemberProfile = ({ member }: { member: Member }) => {
   return (
     <div className="w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}

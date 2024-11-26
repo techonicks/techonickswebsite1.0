@@ -4,7 +4,7 @@ import { Label } from "../ui/label";
 import { Input, Select } from "../ui/input";
 import { cn } from "@/utils/cn";
 import { TextArea } from "../ui/textarea";
-import { SubmitData } from "@/app/api/action";
+import { SubmitData } from "@/app/_actions/feedbackFormSubmit/action";
 import Swal from "sweetalert2";
 import { LoadingContext } from "@/context/loading.context";
 import { formValidator } from "@/utils/validators";

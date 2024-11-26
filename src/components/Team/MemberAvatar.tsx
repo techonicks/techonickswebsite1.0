@@ -1,22 +1,12 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import React from "react";
+import { Member } from "@/interfaces/member.interface";
 
-interface member {
-  title: string;
-  img: StaticImageData;
-  link: string;
-  dept: string;
-  desc: string;
-  year: string;
-  social: {
-    logo: StaticImageData;
-    link: string;
-  }[];
-}
 
-const MemberAvatar = ({ member }: { member: member }) => {
+
+const MemberAvatar = ({ member }: { member: Member }) => {
   const words = [
     {
       text: "I",

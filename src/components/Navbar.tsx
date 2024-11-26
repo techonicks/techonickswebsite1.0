@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import image from "@/assets/Tech-o-nicks_logo-removebg-preview.png";
-import { Cairo, Poppins } from "next/font/google";
-import Link from "next/link";
-import HoveredText from "./Home/HoveredText";
-import { useState } from "react";
 import Hamburger from "hamburger-react";
+import { Cairo, Poppins } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import HoveredText from "./Home/HoveredText";
 import Sidebar from "./Sidebar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "800" });
@@ -45,6 +45,13 @@ const Navbar = () => {
               prefetch={false}
             >
               <HoveredText>Join Us</HoveredText>
+            </Link>
+            <Link
+              href={"/membership"}
+              className="animate-textGlow"
+              prefetch={false}
+            >
+              <HoveredText>{null}</HoveredText>
             </Link>
           </nav>
         </header>

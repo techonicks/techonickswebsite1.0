@@ -1,17 +1,9 @@
 "use server"
 
+import { StudentData } from "@/interfaces/studentData.interface";
 import dbConnect from "@/lib/db/dbConnect";
 import  Student  from "@/models/student.model";
 
-type StudentData = {
-    name : string,
-    department : string,
-    year : string,
-    email : string,
-    interestedFields : string,
-    whyJoin : string,
-    timeStamp : string
-}
 
 export const SubmitData = async(data:StudentData)=>{
     try{
