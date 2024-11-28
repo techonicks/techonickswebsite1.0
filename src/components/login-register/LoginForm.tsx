@@ -4,8 +4,16 @@ import Link from "next/link";
 import { BottomGradient, LabelInputContainer } from "../Join/JoinUsForm";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
+import Swal from "sweetalert2";
 
 const LoginForm = () => {
+
+  Swal.fire({
+    title: "Warning",
+    text: "Register and Login pages are under development",
+    icon: "warning",
+  });
+
   return (
     <form className="w-full p-4">
       <h1 className="text-2xl">Login</h1>
