@@ -4,6 +4,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 const page = () => {
   return (
+    <main className="pt-[130px] relative">
     <MembershipPage>
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -21,6 +22,7 @@ const page = () => {
       </div>
       <JoinUsForm />
     </MembershipPage>
+    </main>
   );
 };
 

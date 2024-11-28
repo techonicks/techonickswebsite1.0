@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -19,9 +17,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} min-h-screen custom-scrollbar `}>
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

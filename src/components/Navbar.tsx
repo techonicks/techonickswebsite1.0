@@ -47,11 +47,11 @@ const Navbar = () => {
               <HoveredText>Join Us</HoveredText>
             </Link>
             <Link
-              href={"/membership"}
+              href={"/login"}
               className="animate-textGlow"
               prefetch={false}
             >
-              <HoveredText>{null}</HoveredText>
+              <HoveredText>Login</HoveredText>
             </Link>
           </nav>
         </header>

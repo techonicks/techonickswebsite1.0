@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { pastEvents } from "@/utils/AllEvents";
 import React from "react";
+import Navbar from "@/components/Navbar";
 
 const page = ({ params }: any) => {
   const { id } = params;

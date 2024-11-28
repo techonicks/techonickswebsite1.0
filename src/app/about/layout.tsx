@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,7 +9,13 @@ export const metadata: Metadata = {
 };
 
 const layout = ({ children }: { children: React.ReactNode }) => {
-  return <main className="pt-[120px]">{children}</main>;
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
 };
 
 export default layout;
