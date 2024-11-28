@@ -5,6 +5,7 @@ import { BottomGradient, LabelInputContainer } from "../Join/JoinUsForm";
 import { Label } from "../ui/label";
 import { Input, Select } from "../ui/input";
 import { FileUpload } from "../ui/file-upload";
+import Swal from "sweetalert2";
 
 const RegisterForm = () => {
   const [files, setFiles] = useState<File[]>([]);
@@ -12,6 +13,12 @@ const RegisterForm = () => {
     setFiles(files);
     console.log(files);
   };
+
+  Swal.fire({
+    title: "Warning",
+    text: "Register and Login pages are under development",
+    icon: "warning",
+  })
 
   return (
     <form className="w-full p-4">
