@@ -38,9 +38,9 @@ const LoginForm = () => {
       </button>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-4 h-[1px] w-full" />
       <p className="text-center text-sm text-white">
-        Don't have an account?{" "}
+        Did not register yet?{" "}
         <Link href="/register" className="text-cyan-600">
-          Sign Up
+          Register
         </Link>
       </p>
     </form>
