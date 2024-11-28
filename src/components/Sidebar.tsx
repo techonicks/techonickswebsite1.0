@@ -37,6 +37,9 @@ const Sidebar = ({ isOpen, setOpen }: any) => {
         >
           <HoveredText>Join Us</HoveredText>
         </Link>
+        <Link href={"/login"} className="animate-textGlow" prefetch={false}>
+          <HoveredText>Login</HoveredText>
+        </Link>
       </nav>
     </div>
   );
