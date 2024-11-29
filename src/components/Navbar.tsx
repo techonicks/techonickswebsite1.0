@@ -1,11 +1,13 @@
 "use client";
 
 import image from "@/assets/Tech-o-nicks_logo-removebg-preview.png";
+import { MemberWithCredentials } from "@/interfaces/member.interface";
 import Hamburger from "hamburger-react";
 import { Cairo, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Swal from "sweetalert2";
 import HoveredText from "./Home/HoveredText";
 import Sidebar from "./Sidebar";
 
@@ -14,7 +16,24 @@ const cairo = Cairo({ subsets: ["latin"], weight: "800" });
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
+  const [user,setUser] = useState<MemberWithCredentials>()
 
+  // useEffect(()=>{
+  //   const getUser = async () => {
+  //     const user = await useGetUserByToken()
+  //     console.log(user);
+  //     setUser(user)
+  //   }
+  //   getUser()
+  // },[])
+
+  // Swal.fire({
+  //   title: "Welcome!",
+  //   text: `Hello ${user?.name}, You are logged in`,
+  //   icon: "success",
+  //   background: "black",
+  //   color: "green",
+  // })
   return (
     <>
       <div className="w-screen flex justify-center items-center fixed top-0 z-40 backdrop-blur-md py-2 ">

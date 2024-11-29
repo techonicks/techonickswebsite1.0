@@ -1,16 +1,25 @@
 "use client";
+import { MemberWithCredentials } from "@/interfaces/member.interface";
+import { handleRegister } from "@/lib/handlers/register";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { BottomGradient, LabelInputContainer } from "../Join/JoinUsForm";
-import { Label } from "../ui/label";
-import { Input, Select } from "../ui/input";
 import { FileUpload } from "../ui/file-upload";
+import { Input, Select } from "../ui/input";
+import { Label } from "../ui/label";
 
 const RegisterForm = () => {
-  const [files, setFiles] = useState<File[]>([]);
+  const [user, setUser] = useState<MemberWithCredentials>({
+    avatar: "",
+    name: "",
+    email: "",
+    password: "",
+    year: "",
+    department: "",
+    role: "",
+  });
   const handleFileUpload = (files: File[]) => {
-    setFiles(files);
-    console.log(files);
+    setUser({ ...user, avatar: files[0] });
   };
 
   return (
@@ -28,7 +37,8 @@ const RegisterForm = () => {
               id="name"
               placeholder="Alan Turing"
               type="text"
-              name="name"
+              value={user.name}
+              onChange={(e) => setUser({ ...user, name: e.target.value })}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
@@ -37,7 +47,8 @@ const RegisterForm = () => {
               id="email"
               placeholder="example@gmail.com"
               type="email"
-              name="email"
+              value={user.email}
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
@@ -46,13 +57,20 @@ const RegisterForm = () => {
               id="password"
               placeholder="example@gmail.com"
               type="password"
-              name="password"
+              value={user.password}
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
             />
           </LabelInputContainer>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="department">Department</Label>
-              <Select id="department">
+              <Select
+                id="department"
+                value={user.department}
+                onChange={(e) =>
+                  setUser({ ...user, department: e.target.value })
+                }
+              >
                 <option value="" defaultChecked>
                   Select Department
                 </option>
@@ -65,7 +83,11 @@ const RegisterForm = () => {
             </LabelInputContainer>
             <LabelInputContainer>
               <Label htmlFor="year">Year</Label>
-              <Select id="year">
+              <Select
+                id="year"
+                value={user.year}
+                onChange={(e) => setUser({ ...user, year: e.target.value })}
+              >
                 <option value="">Select Year</option>
                 <option value="1st">1st</option>
                 <option value="2nd">2nd</option>
@@ -76,7 +98,11 @@ const RegisterForm = () => {
           </div>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="role">Role</Label>
-            <Select id="role">
+            <Select
+              id="role"
+              value={user.role}
+              onChange={(e) => setUser({ ...user, role: e.target.value })}
+            >
               <option value="">Select Role</option>
               <option value="incharge" disabled>
                 Incharge
@@ -90,6 +116,7 @@ const RegisterForm = () => {
           <button
             className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
             type="submit"
+            onClick={(e)=>handleRegister(e,user)}
           >
             Register &rarr;
             <BottomGradient />
