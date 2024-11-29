@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { useGetUserByToken } from "@/hooks/getUser.hook";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
