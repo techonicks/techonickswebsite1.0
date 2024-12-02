@@ -1,6 +1,6 @@
 "use client";
 
-import { useGetUserByToken } from "@/hooks/getUser.hook";
+import { getUserByToken } from "@/lib/fetch/getUser";
 import { UserFoundResponse } from "@/interfaces/api.interface";
 import { handleLogOut } from "@/lib/handlers/logout";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const ProfileSection = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const user = await useGetUserByToken();
+      const user = await getUserByToken();
       console.log(user);
       if (!user.success) {
         router.push("/login");

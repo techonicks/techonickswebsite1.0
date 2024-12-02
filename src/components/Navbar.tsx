@@ -1,17 +1,15 @@
 "use client";
 
 import image from "@/assets/Tech-o-nicks_logo-removebg-preview.png";
-import { MemberWithCredentials } from "@/interfaces/member.interface";
+import { UserFoundResponse } from "@/interfaces/api.interface";
+import { getUserByToken } from "@/lib/fetch/getUser";
 import Hamburger from "hamburger-react";
 import { Cairo, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { memo, useEffect, useState } from "react";
-import Swal from "sweetalert2";
 import HoveredText from "./Home/HoveredText";
 import Sidebar from "./Sidebar";
-import { useGetUserByToken } from "@/hooks/getUser.hook";
-import { UserFoundResponse } from "@/interfaces/api.interface";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "800" });
 const cairo = Cairo({ subsets: ["latin"], weight: "800" });
@@ -22,13 +20,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const user = await useGetUserByToken();
-      console.log(user);
-      if(!user.success){
-        setUser(undefined)
-      }
-      else {
-        setUser(user);
+      try {
+        const user = await getUserByToken();
+        console.log(user);
+        if (!user.success) {
+          setUser(undefined);
+        } else {
+          setUser(user);
+        }
+      } catch (error) {
+        console.log(error);
       }
     };
     getUser();
