@@ -18,3 +18,7 @@ export interface LoginPayload{
 export interface LoginResponse extends BaseResponse {
     response? : MemberWithCredentials
 }
+
+export interface UserFoundResponse extends BaseResponse {
+    response? : MemberWithCredentials
+}

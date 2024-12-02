@@ -6,26 +6,33 @@ import Hamburger from "hamburger-react";
 import { Cairo, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { memo, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import HoveredText from "./Home/HoveredText";
 import Sidebar from "./Sidebar";
+import { useGetUserByToken } from "@/hooks/getUser.hook";
+import { UserFoundResponse } from "@/interfaces/api.interface";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "800" });
 const cairo = Cairo({ subsets: ["latin"], weight: "800" });
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
-  const [user,setUser] = useState<MemberWithCredentials>()
+  const [user, setUser] = useState<UserFoundResponse>();
 
-  // useEffect(()=>{
-  //   const getUser = async () => {
-  //     const user = await useGetUserByToken()
-  //     console.log(user);
-  //     setUser(user)
-  //   }
-  //   getUser()
-  // },[])
+  useEffect(() => {
+    const getUser = async () => {
+      const user = await useGetUserByToken();
+      console.log(user);
+      if(!user.success){
+        setUser(undefined)
+      }
+      else {
+        setUser(user);
+      }
+    };
+    getUser();
+  }, []);
 
   // Swal.fire({
   //   title: "Welcome!",
@@ -65,13 +72,23 @@ const Navbar = () => {
             >
               <HoveredText>Join Us</HoveredText>
             </Link>
-            <Link
-              href={"/login"}
-              className="animate-textGlow"
-              prefetch={false}
-            >
-              <HoveredText>Login</HoveredText>
-            </Link>
+            {user ? (
+              <Link
+                href={"/profile"}
+                className="animate-textGlow"
+                prefetch={false}
+              >
+                <HoveredText>profile</HoveredText>
+              </Link>
+            ) : (
+              <Link
+                href={"/login"}
+                className="animate-textGlow"
+                prefetch={false}
+              >
+                <HoveredText>Login</HoveredText>
+              </Link>
+            )}
           </nav>
         </header>
         <div className="lg:hidden px-2">
@@ -85,9 +102,9 @@ const Navbar = () => {
           />
         </div>
       </div>
-      {isOpen && <Sidebar isOpen={isOpen} setOpen={setOpen} />}
+      {isOpen && <Sidebar user={user} isOpen={isOpen} setOpen={setOpen} />}
     </>
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

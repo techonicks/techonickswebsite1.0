@@ -1,15 +1,17 @@
 "use client";
 import { MemberWithCredentials } from "@/interfaces/member.interface";
-import { handleRegister } from "@/lib/handlers/register";
+import { register } from "@/lib/handlers/register";
 import Link from "next/link";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { BottomGradient, LabelInputContainer } from "../Join/JoinUsForm";
 import { FileUpload } from "../ui/file-upload";
 import Swal from "sweetalert2";
 import { Input, Select } from "../ui/input";
 import { Label } from "../ui/label";
+import { useRouter } from "next/navigation";
 
 const RegisterForm = () => {
+  const router = useRouter();
   const [user, setUser] = useState<MemberWithCredentials>({
     avatar: "",
     name: "",
@@ -23,11 +25,43 @@ const RegisterForm = () => {
     setUser({ ...user, avatar: files[0] });
   };
 
-  Swal.fire({
-    title: "Warning",
-    text: "Register and Login pages are under development",
-    icon: "warning",
-  })
+  // Swal.fire({
+  //   title: "Warning",
+  //   text: "Register and Login pages are under development",
+  //   icon: "warning",
+  // })
+
+  const handleRegister = async (e: FormEvent) => {
+    e.preventDefault();
+    try {
+      const data = await register(user);
+      Swal.fire({
+        title: data.success ? "Success" : "Failed",
+        text: data.message,
+        icon: data.success ? "success" : "error",
+        timer: 2500,
+        timerProgressBar: true,
+        showConfirmButton: false,
+        background: "#474c4f",
+        color: "cyan",
+      }).then(() => {
+        if (data.success) {
+          router.push("/login");
+        }
+      });
+    } catch (error: any) {
+      Swal.fire({
+        title: "Something went wrong",
+        text: error?.message ? error.message : "Failed to register",
+        icon: "error",
+        timer: 2500,
+        timerProgressBar: true,
+        showConfirmButton: false,
+        background: "#474c4f",
+        color: "cyan",
+      });
+    }
+  };
 
   return (
     <form className="w-full p-4">
@@ -123,7 +157,7 @@ const RegisterForm = () => {
           <button
             className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
             type="submit"
-            onClick={(e)=>handleRegister(e,user)}
+            onClick={handleRegister}
           >
             Register &rarr;
             <BottomGradient />

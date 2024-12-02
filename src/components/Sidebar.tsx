@@ -1,7 +1,8 @@
 import Link from "next/link";
 import HoveredText from "./Home/HoveredText";
+import { memo } from "react";
 
-const Sidebar = ({ isOpen, setOpen }: any) => {
+const Sidebar = ({ isOpen, setOpen, user }: any) => {
   return (
     <div className="fixed top-0 right-0 flex justify-center h-screen w-full sm:w-[75vw] bg-black/[0.5] backdrop-blur-lg z-[20] lg:hidden">
       <nav className="flex gap-4 absolute top-[120px] flex-col px-4">
@@ -37,12 +38,18 @@ const Sidebar = ({ isOpen, setOpen }: any) => {
         >
           <HoveredText>Join Us</HoveredText>
         </Link>
-        <Link href={"/login"} className="animate-textGlow" prefetch={false}>
-          <HoveredText>Login</HoveredText>
-        </Link>
+        {user ? (
+          <Link href={"/profile"} className="animate-textGlow" prefetch={false}>
+            <HoveredText>profile</HoveredText>
+          </Link>
+        ) : (
+          <Link href={"/login"} className="animate-textGlow" prefetch={false}>
+            <HoveredText>Login</HoveredText>
+          </Link>
+        )}
       </nav>
     </div>
   );
 };
 
-export default Sidebar;
+export default memo(Sidebar);

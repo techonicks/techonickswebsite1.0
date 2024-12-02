@@ -17,4 +17,5 @@ export const handleLogin = async (e: FormEvent, loginPayload: LoginPayload) => {
 
   const data = response.data as LoginResponse
   console.log(data);
+  return data
 };
