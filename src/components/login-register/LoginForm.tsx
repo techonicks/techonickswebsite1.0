@@ -11,33 +11,28 @@ import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 
 const LoginForm = () => {
-  
 
-  // Swal.fire({
-  //   title: "Warning",
-  //   text: "Register and Login pages are under development",
-  //   icon: "warning",
-  // });
-  const router = useRouter()
-  const login = async (e:FormEvent)=>{
-    const response = await handleLogin(e,user)
+  const router = useRouter();
+  const login = async (e: FormEvent) => {
     try {
-      if(response.success){
-        Swal.fire({
-          title: "Success",
-          text: response.message,
-          icon: "success",
-        })
-        return router.push('/')
-      }
+      const response = await handleLogin(e, user);
+      Swal.fire({
+        title: response.success ? "Success" : "Failed",
+        text: response.message,
+        icon: response.success ? "success" : "error",
+      }).then(() => {
+        if (response.success) {
+          router.push("/");
+        }
+      });
     } catch (error) {
       Swal.fire({
         title: "Error",
         text: "An error occurred",
         icon: "error",
-      })
+      });
     }
-  }
+  };
 
   const [user, setUser] = useState<LoginPayload>({
     email: "",
@@ -72,7 +67,7 @@ const LoginForm = () => {
       <button
         className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
         type="submit"
-        onClick={(e)=>login(e)}
+        onClick={(e) => login(e)}
       >
         Send &rarr;
         <BottomGradient />
