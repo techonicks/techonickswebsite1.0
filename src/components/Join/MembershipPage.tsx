@@ -2,7 +2,7 @@
 
 import LoadingContextProvider from "@/context/loading.context";
 import React, { useState } from "react";
-import FormSubmitLoader from "../FormSubmitLoader";
+import FormSubmitLoader from "../shared/FormSubmitLoader";
 
 const MembershipPage = ({children}:{children:React.ReactNode}) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);

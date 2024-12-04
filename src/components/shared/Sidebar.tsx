@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HoveredText from "./Home/HoveredText";
+import HoveredText from "../Home/HoveredText";
 import { memo } from "react";
 
 const Sidebar = ({ isOpen, setOpen, user }: any) => {

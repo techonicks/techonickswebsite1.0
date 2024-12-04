@@ -8,7 +8,7 @@ import { Cairo, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { memo, useEffect, useState } from "react";
-import HoveredText from "./Home/HoveredText";
+import HoveredText from "../Home/HoveredText";
 import Sidebar from "./Sidebar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "800" });
