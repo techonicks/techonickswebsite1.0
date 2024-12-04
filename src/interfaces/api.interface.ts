@@ -22,3 +22,7 @@ export interface LoginResponse extends BaseResponse {
 export interface UserFoundResponse extends BaseResponse {
     response? : MemberWithCredentials
 }
+
+export interface ProfileEditResponse extends BaseResponse {
+    response? : MemberWithCredentials
+}

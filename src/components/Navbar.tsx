@@ -22,7 +22,6 @@ const Navbar = () => {
     const getUser = async () => {
       try {
         const user = await getUserByToken();
-        console.log(user);
         if (!user.success) {
           setUser(undefined);
         } else {

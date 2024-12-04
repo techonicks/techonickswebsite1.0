@@ -12,6 +12,5 @@ export const handleLogOut = async (e: FormEvent) => {
       withCredentials: true,
     }
   );
-  console.log(response);
   return response.data as BaseResponse;
 };

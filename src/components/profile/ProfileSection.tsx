@@ -1,21 +1,27 @@
 "use client";
 
-import { getUserByToken } from "@/lib/fetch/getUser";
+import editIcon from "@/assets/icons/edit.svg";
 import { UserFoundResponse } from "@/interfaces/api.interface";
+import { MemberWithCredentials } from "@/interfaces/member.interface";
+import { getUserByToken } from "@/lib/fetch/getUser";
 import { handleLogOut } from "@/lib/handlers/logout";
+import { handleEditBio } from "@/lib/handlers/profileHandlers";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FormEvent, memo, useEffect, useState } from "react";
 import Swal from "sweetalert2";
-
+import { TextArea } from "../ui/textarea";
+import Edit from "../shared/Edit";
 const ProfileSection = () => {
   const [user, setUser] = useState<UserFoundResponse>();
+  const [isEditBioOpen, setIsEditBioOpen] = useState<Boolean>(false);
+  const [editedUser, setEditedUser] =
+    useState<Partial<MemberWithCredentials>>();
   const router = useRouter();
 
   useEffect(() => {
     const getUser = async () => {
       const user = await getUserByToken();
-      console.log(user);
       if (!user.success) {
         router.push("/login");
       } else {
@@ -45,6 +51,42 @@ const ProfileSection = () => {
       });
     }
   };
+
+  const editBio = async () => {
+    if (editedUser?.description && editedUser?.description?.length > 500) {
+      Swal.fire({
+        title: "Character limit exceeded",
+        text: "Bio cannot exceed 500 characters",
+        icon: "error",
+      });
+      return;
+    }
+    try {
+      const response = await handleEditBio(
+        editedUser?.description!,
+        user?.response?.email!
+      );
+      Swal.fire({
+        title: response.success ? "Success" : "Failed",
+        text: response.message,
+        icon: response.success ? "success" : "error",
+      }).then(() => {
+        if (response.success) {
+          router.refresh();
+        }
+      });
+    } catch (error: any) {
+      Swal.fire({
+        title: "Something went wrong",
+        text: error.message ? error.message : "Failed to edit bio",
+        icon: "error",
+      });
+    }
+  };
+
+  const closeBioEditor = () =>{
+    setIsEditBioOpen(false);
+  }
 
   if (!user) {
     return <div>Loading...</div>;
@@ -87,17 +129,30 @@ const ProfileSection = () => {
           <h1 className="text-3xl md:text-5xl text-cyan-500 font-semibold">
             {user?.response?.name}
           </h1>
-          <h2 className="text-xl">Role : {user?.response?.role}</h2>
-          <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]">
-            {user?.response?.description
-              ? user?.response?.description
-              : "No bio"}
-          </p>
+          <h2 className="text-xl">Role : <span className="text-cyan-500">{user?.response?.role.replace(user?.response?.role.charAt(0),user?.response?.role.charAt(0).toUpperCase())}</span></h2>
+          <div className="text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]">
+            <div>
+              {user?.response?.description !== ""
+                ? user?.response?.description
+                : "No Bio , Please let us know about yourself"}
+            </div>
+            <span
+              className="flex items-center justify-self-start gap-1 text-[1.09rem] cursor-pointer bg-cyan-400 text-black py-1 px-3 my-1 rounded"
+              onClick={() => {
+                console.log(isEditBioOpen);
+                setIsEditBioOpen((prev) => !prev);
+              }}
+            >
+              <span>{user.response?.description !== "" ? "Edit" : "Set"}</span>
+              <Image src={editIcon} alt="editBio" className="w-6" />
+            </span>
+            {isEditBioOpen && (
+              <Edit handler={editBio} editedUser={editedUser} setEditedUser={setEditedUser} close={closeBioEditor}/>
+            )}
+          </div>
         </div>
       </div>
-      <div className="flex-1">
-        {/* Profile Stuffs */}
-      </div>
+      <div className="flex-1">{/* Profile Stuffs */}</div>
       <div className="mt-3">
         <button className="bg-cyan-800 px-4 py-3 rounded-md" onClick={logOut}>
           Log out
