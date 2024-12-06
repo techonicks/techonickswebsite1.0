@@ -1,3 +1,4 @@
+import { Event } from "./events.interface"
 import { MemberWithCredentials } from "./member.interface"
 
 export interface BaseResponse {
@@ -25,4 +26,8 @@ export interface UserFoundResponse extends BaseResponse {
 
 export interface ProfileEditResponse extends BaseResponse {
     response? : MemberWithCredentials
+}
+
+export interface EventFetchResponse extends BaseResponse {
+    response? : Event[]
 }
