@@ -9,7 +9,15 @@ import { DB_NAME } from "@/utils/constants";
 export const getEvents = async (): Promise<EventFetchResponse> => {
   try {
     await dbConnect(DB_NAME);
-    const events: Event[] = await Events.find({});
+    const plainEventArray = await Events.find({});
+    const events : Event[] = plainEventArray.map(event=>({
+        type : event.type,
+        title : event.title,
+        description : event.description,
+        image : event.image,
+        link : event.link,
+        date : event.date
+    }))
     return {
       success: true,
       message: "Events fetched successfully",

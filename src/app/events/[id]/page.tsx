@@ -2,11 +2,14 @@ import Image from "next/image";
 import { pastEvents } from "@/utils/AllEvents";
 import React from "react";
 import Navbar from "@/components/shared/Navbar";
+import { getEvents } from "@/app/_actions/getEvents/action";
 
-const page = ({ params }: any) => {
+const page = async({ params }: any) => {
   const { id } = params;
 
-  const event = pastEvents.filter((event) => event.link === `events/${id}`)[0];
+  const events = await getEvents()
+
+  const event = events.response!.filter((event) => event.link === `events/${id}`)[0];
 
   return (
     <div className="pt-[130px] min-h-[60vh] bg-dot-white/[0.3] relative">
@@ -18,6 +21,8 @@ const page = ({ params }: any) => {
               src={event.image}
               alt="dev-draw"
               className="sm:max-w-[400px] max-w-[250px]"
+              width={400}
+              height={800}
             />
           </div>
           <div className="flex flex-col gap-3 ">

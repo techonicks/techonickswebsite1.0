@@ -4,9 +4,10 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
 import { pastEvents } from "@/utils/AllEvents";
+import { Event } from "@/interfaces/events.interface";
 import Link from "next/link";
 
-const EventSection = () => {
+const EventSection = ({ events }: { events: Event[] }) => {
   const [tabToggler, setTabTogller] = useState({
     isPastEnabled: true,
     isOnGoingEnabled: false,
@@ -69,7 +70,7 @@ const EventSection = () => {
               </button>
             </div>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-              {pastEvents
+              {events
                 .filter((event) => event.type === "past")
                 .map((item, index) => (
                   <div key={`content-${index}`} className="mb-10">
@@ -148,7 +149,7 @@ const EventSection = () => {
               </button>
             </div>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-              {pastEvents
+              {events
                 .filter((event) => event.type === "ongoing")
                 .map((item, index) => (
                   <div key={`content-${index}`} className="mb-10">
@@ -225,7 +226,7 @@ const EventSection = () => {
               </button>
             </div>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-              {pastEvents
+              {events
                 .filter((event) => event.type === "upcoming")
                 .map((item, index) => (
                   <div key={`content-${index}`} className="mb-10">
