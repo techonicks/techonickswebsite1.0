@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const handleEditBio = async (bio: string, email: string) => {
   const response = await axios.post(
-    AUTH_BASE_URL + "/user/editProfile/editBio",
+    AUTH_BASE_URL + "/user/profile/editBio",
     {
       description: bio,
       email: email,

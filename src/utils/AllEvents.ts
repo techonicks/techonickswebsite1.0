@@ -7,7 +7,7 @@ import inductionProgram2024 from "@/assets/eventPosters/inductionProgram2024.png
 import devignite from "@/assets/eventPosters/devignite.jpg";
 import designdraft from "@/assets/eventPosters/designdraft.jpg";
 
-export const pastEvents = [
+const pastEvents = [
   {
     type: "upcoming",
     title: "DESIGNDRAFT",

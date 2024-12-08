@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import { Event } from "@/interfaces/events.interface";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
-import { pastEvents } from "@/utils/AllEvents";
-import { Event } from "@/interfaces/events.interface";
-import Link from "next/link";
 
 const EventSection = ({ events }: { events: Event[] }) => {
   const [tabToggler, setTabTogller] = useState({

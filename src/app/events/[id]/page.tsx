@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { pastEvents } from "@/utils/AllEvents";
-import React from "react";
-import Navbar from "@/components/shared/Navbar";
 import { getEvents } from "@/app/_actions/getEvents/action";
+import Image from "next/image";
 
 const page = async({ params }: any) => {
   const { id } = params;
