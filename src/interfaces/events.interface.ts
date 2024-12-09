@@ -1,8 +1,9 @@
 export interface Event {
-  type: "past" | "upcoming" | "ongoing" | string;
+  email? : string
+  type: "past" | "upcoming" | "ongoing" | ""
   title: string;
   description?: string;
-  image: string;
-  link: string;
-  date : string
+  image: string | File;
+  link?: string;
+  date? : string
 }

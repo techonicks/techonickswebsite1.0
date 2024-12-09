@@ -15,8 +15,8 @@ const page = async({ params }: any) => {
         <div className="flex flex-col lg:flex-row justify-center w-full items-center md:px-24 gap-4">
           <div className="">
             <Image
-              src={event.image}
-              alt="dev-draw"
+              src={event.image as string}
+              alt={event.title}
               className="sm:max-w-[400px] max-w-[250px]"
               width={400}
               height={800}

@@ -8,6 +8,8 @@ import { getEvents } from "./_actions/getEvents/action";
 export default async function Home() {
 
   let events = await getEvents()
+  console.log(events.response);
+  
 
   return (
     <main className="pt-[120px]">

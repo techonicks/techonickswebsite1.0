@@ -31,3 +31,7 @@ export interface ProfileEditResponse extends BaseResponse {
 export interface EventFetchResponse extends BaseResponse {
     response? : Event[]
 }
+
+export interface EventCreateResponse extends BaseResponse {
+    response? : Event
+}

@@ -79,9 +79,9 @@ const EventSection = ({ events }: { events: Event[] }) => {
 
                     <div className="text-sm  prose prose-sm prose-invert">
                       {item?.image && (
-                        <Link href={item.link}>
+                        <Link href={item.link as string}>
                           <Image
-                            src={item.image}
+                            src={item.image as string}
                             alt="blog thumbnail"
                             height="1000"
                             width="1000"
@@ -159,7 +159,7 @@ const EventSection = ({ events }: { events: Event[] }) => {
                     <div className="text-sm  prose prose-sm prose-invert">
                       {item?.image && (
                         <Image
-                          src={item.image}
+                          src={item.image as string}
                           alt="blog thumbnail"
                           height="1000"
                           width="1000"
@@ -236,7 +236,7 @@ const EventSection = ({ events }: { events: Event[] }) => {
                     <div className="text-sm  prose prose-sm prose-invert">
                       {item?.image && (
                         <Image
-                          src={item.image}
+                          src={item.image as string}
                           alt="blog thumbnail"
                           height="1000"
                           width="1000"
