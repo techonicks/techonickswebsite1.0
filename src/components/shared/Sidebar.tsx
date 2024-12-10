@@ -4,7 +4,7 @@ import { memo } from "react";
 
 const Sidebar = ({ isOpen, setOpen, user }: any) => {
   return (
-    <div className="fixed top-0 right-0 flex justify-center h-screen w-full sm:w-[75vw] bg-black/[0.5] backdrop-blur-lg z-[20] lg:hidden">
+    <div className="fixed top-0 right-0 flex justify-center h-screen w-full sm:w-[75vw] bg-black/[0.5] backdrop-blur-lg z-[45] lg:hidden">
       <nav className="flex gap-4 absolute top-[120px] flex-col px-4">
         <Link
           href={"/"}

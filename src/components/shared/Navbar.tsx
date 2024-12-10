@@ -43,7 +43,7 @@ const Navbar = () => {
   // })
   return (
     <>
-      <div className="w-screen flex justify-center items-center fixed top-0 z-40 backdrop-blur-md py-2 ">
+      <div className="w-screen flex justify-center items-center fixed top-0 z-50 backdrop-blur-md py-2 ">
         <header className="px-2 w-[90%] md:px-10 flex items-center  justify-between">
           <div className="flex items-center sm:gap-4 gap-2">
             <Link href="/">
