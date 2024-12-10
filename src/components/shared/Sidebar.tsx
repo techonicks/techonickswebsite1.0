@@ -40,7 +40,7 @@ const Sidebar = ({ isOpen, setOpen, user }: any) => {
         </Link>
         {user ? (
           <Link href={"/profile"} className="animate-textGlow" prefetch={false}>
-            <HoveredText>profile</HoveredText>
+            <HoveredText>Profile</HoveredText>
           </Link>
         ) : (
           <Link href={"/login"} className="animate-textGlow" prefetch={false}>

@@ -78,7 +78,7 @@ const Navbar = () => {
                 className="animate-textGlow"
                 prefetch={false}
               >
-                <HoveredText>profile</HoveredText>
+                <HoveredText>Profile</HoveredText>
               </Link>
             ) : (
               <Link

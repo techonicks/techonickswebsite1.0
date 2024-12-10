@@ -98,7 +98,7 @@ const CreateEventForm = () => {
       </h1>
       <div className="w-full flex flex-col md:flex-row gap-3">
         <div className="flex justify-center items-center md:w-[45%] border border-dashed bg-black border-neutral-800 rounded-lg">
-          <FileUpload onChange={handleImageChange} />
+          <FileUpload onChange={handleImageChange} text="Put a poster for your event"/>
         </div>
         <div className="md:w-[55%] ">
           {/* */}

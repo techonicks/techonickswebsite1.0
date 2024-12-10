@@ -8,7 +8,7 @@ const page = () => {
       <div className="">
         <Spotlight />
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          Create A Event
+          Create An Event
         </h1>
       </div>
       <div>

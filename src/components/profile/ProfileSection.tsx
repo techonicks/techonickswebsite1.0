@@ -12,6 +12,8 @@ import { FormEvent, memo, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { TextArea } from "../ui/textarea";
 import Edit from "../shared/Edit";
+import Link from "next/link";
+import bell from "@/assets/icons/bell.svg";
 const ProfileSection = () => {
   const [user, setUser] = useState<UserFoundResponse>();
   const [isEditBioOpen, setIsEditBioOpen] = useState<Boolean>(false);
@@ -84,9 +86,9 @@ const ProfileSection = () => {
     }
   };
 
-  const closeBioEditor = () =>{
+  const closeBioEditor = () => {
     setIsEditBioOpen(false);
-  }
+  };
 
   if (!user) {
     return <div>Loading...</div>;
@@ -129,7 +131,15 @@ const ProfileSection = () => {
           <h1 className="text-3xl md:text-5xl text-cyan-500 font-semibold">
             {user?.response?.name}
           </h1>
-          <h2 className="text-xl">Role : <span className="text-cyan-500">{user?.response?.role.replace(user?.response?.role.charAt(0),user?.response?.role.charAt(0).toUpperCase())}</span></h2>
+          <h2 className="text-xl">
+            Role :{" "}
+            <span className="text-cyan-500">
+              {user?.response?.role.replace(
+                user?.response?.role.charAt(0),
+                user?.response?.role.charAt(0).toUpperCase()
+              )}
+            </span>
+          </h2>
           <div className="text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]">
             <div>
               {user?.response?.description !== ""
@@ -147,11 +157,23 @@ const ProfileSection = () => {
               <Image src={editIcon} alt="editBio" className="w-6" />
             </span>
             {isEditBioOpen && (
-              <Edit handler={editBio} editedUser={editedUser} setEditedUser={setEditedUser} close={closeBioEditor}/>
+              <Edit
+                handler={editBio}
+                editedUser={editedUser}
+                setEditedUser={setEditedUser}
+                close={closeBioEditor}
+              />
             )}
           </div>
         </div>
       </div>
+      {user.response?.role === "incharge" && (
+        <div className="mt-6 mb-2 ">
+          <Link className="py-3 px-4 bg-yellow-800 rounded-md flex w-[200px] justify-center items-center gap-1 " href={"/events"}>
+            Create An Event <Image src={bell} alt="event" className="" />
+          </Link>
+        </div>
+      )}
       <div className="flex-1">{/* Profile Stuffs */}</div>
       <div className="mt-3">
         <button className="bg-cyan-800 px-4 py-3 rounded-md" onClick={logOut}>

@@ -25,11 +25,6 @@ const RegisterForm = () => {
     setUser({ ...user, avatar: files[0] });
   };
 
-  // Swal.fire({
-  //   title: "Warning",
-  //   text: "Register and Login pages are under development",
-  //   icon: "warning",
-  // })
 
   const handleRegister = async (e: FormEvent) => {
     e.preventDefault();
@@ -68,7 +63,7 @@ const RegisterForm = () => {
       <h1 className="text-2xl mb-6">Create Your Profile</h1>
       <div className="w-full flex flex-col md:flex-row gap-3">
         <div className="flex justify-center items-center md:w-[45%] border border-dashed bg-black border-neutral-800 rounded-lg">
-          <FileUpload onChange={handleFileUpload} />
+          <FileUpload onChange={handleFileUpload} text="Upload your avatar"/>
         </div>
         <div className="md:w-[55%] ">
           {/* */}
@@ -96,7 +91,6 @@ const RegisterForm = () => {
             <Label htmlFor="password">Password</Label>
             <Input
               id="password"
-              placeholder="example@gmail.com"
               type="password"
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}
