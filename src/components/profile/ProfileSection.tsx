@@ -184,18 +184,31 @@ const ProfileSection = ({
         </div>
       </div>
       {viewAsOwn && user.role === "incharge" && (
-        <div className="mt-6 mb-2 ">
-          <Link
-            className="py-3 px-4 bg-yellow-800 rounded-md flex w-[200px] justify-center items-center gap-1 "
-            href={"/events"}
-          >
-            Create An Event <Image src={bell} alt="event" className="" />
-          </Link>
-        </div>
+        <>
+          <div className="mt-6 mb-2 ">
+            <Link
+              className="py-3 px-4 bg-yellow-800 rounded-md flex w-[200px] justify-center items-center gap-1 "
+              href={"/events"}
+            >
+              Create An Event <Image src={bell} alt="event" className="" />
+            </Link>
+          </div>
+          <div className="mt-2 mb-2">
+            <Link
+              className="py-3 px-4 bg-white text-black rounded-md flex w-[200px] justify-center items-center gap-1 "
+              href={"/events/participants/technovista"}
+            >
+              Check Participants
+            </Link>
+          </div>
+        </>
       )}
       {viewAsOwn && user.role === "member" && (
-        <div className="mt-3">
-          <button className="bg-red-800 px-4 py-3 rounded-md text-white" onClick={()=>router.push("events/register")}>
+        <div className="mt-5">
+          <button
+            className="bg-red-800 text-white px-4 py-3 rounded-md"
+            onClick={() => router.push("events/register")}
+          >
             Register For New Events
           </button>
         </div>

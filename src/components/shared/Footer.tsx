@@ -12,6 +12,12 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center gap-3 text-[0.9rem] sm:text-[1rem] m-auto items-start w-full sm:w-auto">
           <Link
+            href="/members"
+            className="hover:animate-textGlow hover:text-slate-300 duration-75 "
+          >
+            People You May Know
+          </Link>
+          <Link
             href="/team"
             className="hover:animate-textGlow hover:text-slate-300 duration-75 "
           >
@@ -44,9 +50,13 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-6 m-auto">
           {links.map((link, i) => (
-            <span key={i} >
+            <span key={i}>
               <a href={link.src} className="icon-glow ">
-                <Image src={link.logo} alt={link.name} className="max-w-8 overflow-hidden" />
+                <Image
+                  src={link.logo}
+                  alt={link.name}
+                  className="max-w-8 overflow-hidden"
+                />
               </a>
             </span>
           ))}
