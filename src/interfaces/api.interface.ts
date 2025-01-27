@@ -1,4 +1,4 @@
-import { Event } from "./events.interface"
+import { Event, ParticipantDetails } from "./events.interface"
 import { MemberWithCredentials } from "./member.interface"
 
 export interface BaseResponse {
@@ -32,6 +32,18 @@ export interface EventFetchResponse extends BaseResponse {
     response? : Event[]
 }
 
+export interface EventFetchResponseSingle extends BaseResponse {
+    response? : Event 
+}
+
 export interface EventCreateResponse extends BaseResponse {
     response? : Event
+}
+
+export interface UsersFetchResponse extends BaseResponse {
+    response? : MemberWithCredentials[]
+}
+
+export interface ParticipantRegistrationResponse extends BaseResponse {
+    response? : ParticipantDetails
 }
