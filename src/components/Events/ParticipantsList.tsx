@@ -55,7 +55,7 @@ const ParticipantsList = ({
         </thead>
         <tbody>
           {participants?.map((p, i) => (
-            <tr className="text-center">
+            <tr className="text-center" key={i}>
               <td className="border border-gray-300 p-2">
                 {p.participantName}
               </td>
