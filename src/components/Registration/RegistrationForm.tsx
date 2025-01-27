@@ -80,7 +80,7 @@ const EventRegistrationForm = ({
 
   const handleRegisterForEvent = async (e: FormEvent) => {
     e.preventDefault();
-    if(!formInputs.subEvents?.length){
+    if (!formInputs.subEvents?.length) {
       Swal.fire({
         title: "At least one event should be selected",
         icon: "warning",
@@ -93,12 +93,12 @@ const EventRegistrationForm = ({
         formInputs
       );
       Swal.fire({
-        title: response.success? "Success" : "Failed",
+        title: response.success ? "Success" : "Failed",
         text: response.message,
-        icon: response.success? "success" : "warning",
-      })
-      if(response.success){
-        router.push("/")
+        icon: response.success ? "success" : "warning",
+      });
+      if (response.success) {
+        router.push("/");
       }
     } catch (error: any) {
       Swal.fire({
@@ -106,7 +106,7 @@ const EventRegistrationForm = ({
         text: error.message ? error.message : "Failed to Register",
         icon: "error",
       });
-    } 
+    }
   };
 
   return (
@@ -194,12 +194,18 @@ const EventRegistrationForm = ({
                     type="checkbox"
                     id={i.toString()}
                     value={event}
-                    onChange={(e) =>
-                      setFormInputs({
-                        ...formInputs,
-                        subEvents: [...formInputs.subEvents!, e.target.value],
-                      })
-                    }
+                    onChange={(e) => {
+                      const { checked, value } = e.target;
+
+                      setFormInputs((prevFormInputs) => ({
+                        ...prevFormInputs,
+                        subEvents: checked
+                          ? [...prevFormInputs.subEvents!, value] // Add value if checked
+                          : prevFormInputs.subEvents!.filter(
+                              (subEvent) => subEvent !== value
+                            ), // Remove value if unchecked
+                      }));
+                    }}
                   />
                   <Label htmlFor={i.toString()}>{event}</Label>
                 </div>

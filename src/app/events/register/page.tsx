@@ -18,7 +18,7 @@ const page = async() => {
                 participantRollNumber : "",
                 eventDescription : "",
                 eventLocation : "",
-                subEvents : ["Code-A-thon (COMBAT2.0)","Tech Quiz (COMBAT2.0)","Circuit Quest (DESIGNVERSE)","CarftyCard (DESIGNVERSE)","DEV-DRAW 2.0"],
+                subEvents : ["Code-A-thon (COMBAT2.0)","Tech Quiz (COMBAT2.0)","Circuit Quest (DESIGNVERSE)","CarftyCAD (DESIGNVERSE)","DEV-DRAW 2.0"],
                 participantYear : "",
             }}/>
         </div>
