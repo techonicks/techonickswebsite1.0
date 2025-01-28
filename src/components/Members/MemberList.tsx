@@ -1,10 +1,10 @@
-import { getAllMembers } from "@/lib/fetch/getMembers";
+import { fetchPeople } from "@/app/_actions/fetchPeople/action";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const MemberList = async () => {
-  const members = await getAllMembers();
+  const members = await fetchPeople();
   return (
     <div className="py-4 overflow-x-auto">
       <table className="sm:w-full w-[150vw] border-collapse  border border-gray-300">
@@ -36,7 +36,7 @@ const MemberList = async () => {
                 {member.department}
               </td>
               <td className="border border-gray-300 p-2">
-                {member.role.split("").map((char, i) => {
+                {member.role.split("").map((char:string, i:number) => {
                   if (i == 0) char = char.toUpperCase();
                   return char;
                 })}
