@@ -1,10 +1,47 @@
-import { fetchPeople } from "@/app/_actions/fetchPeople/action";
+"use client";
+
+import { getAllMembers } from "@/lib/fetch/getMembers";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const MemberList = async () => {
-  const members = await fetchPeople();
+  const [members, setMembers] = useState<
+    {
+      name: string;
+      role: string;
+      email: string;
+      avatar: string;
+      department: string;
+      year: string;
+      description: string;
+    }[]
+  >([]);
+
+  const fetchPeople = async () => {
+    try {
+      const fetchedPeople = await getAllMembers();
+      if (!fetchedPeople.success) {
+        Swal.fire({
+          title: fetchedPeople.message,
+          icon: fetchedPeople.success ? "success" : "error",
+        });
+      } else {
+        setMembers(fetchedPeople.response);
+      }
+    } catch (error: any) {
+      Swal.fire({
+        title: "An Error Occurred",
+        text: error.message,
+        icon: "error",
+      });
+    }
+  };
+
+  useEffect(() => {
+    fetchPeople();
+  },[]);
   return (
     <div className="py-4 overflow-x-auto">
       <table className="sm:w-full w-[150vw] border-collapse  border border-gray-300">
@@ -19,7 +56,7 @@ const MemberList = async () => {
           </tr>
         </thead>
         <tbody>
-          {members.response?.map((member, i) => (
+          {members?.map((member, i) => (
             <tr className="text-center w-full" key={i}>
               <td className="border border-gray-300 w-[60px] p-2">
                 <Image
@@ -36,7 +73,7 @@ const MemberList = async () => {
                 {member.department}
               </td>
               <td className="border border-gray-300 p-2">
-                {member.role.split("").map((char:string, i:number) => {
+                {member.role.split("").map((char: string, i: number) => {
                   if (i == 0) char = char.toUpperCase();
                   return char;
                 })}
