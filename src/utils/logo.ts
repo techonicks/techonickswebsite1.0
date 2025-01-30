@@ -8,11 +8,17 @@ import githubLogo from '@/assets/icons/githubLogo.svg'
 import instagramLogo from '@/assets/icons/instagramLogo.svg'
 import linkedinLogo from '@/assets/icons/linkedinLogo.svg'
 import youtubeLogo from '@/assets/icons/youtubeLogo.svg'
+import mail from "@/assets/icons/mail.svg"
 
 export const links = [
     {
+        logo:mail,
+        src:"techonickscgec23@gmail.com",
+        name:"Mail"
+    },
+    {
         logo:discordLogo,
-        src: 'https://discord.gg/cvWX5Em9',
+        src: 'https://discord.gg/MbHfQjZ5Wx',
         name:"Discord"
     },
     {
@@ -27,12 +33,12 @@ export const links = [
     },
     {
         logo:linkedinLogo,
-        src:'https://www.linkedin.com/company/101356130/admin/dashboard/',
+        src:'https://www.linkedin.com/company/techonicks',
         name : "LinkedIn"
     },
     {
         logo:youtubeLogo,
-        src:"https://youtube.com/@techonicks?si=my7FU-n1-dRWWp0Q",
+        src:"https://youtube.com/@techonicks",
         name : "Youtube"
     }
 ]
