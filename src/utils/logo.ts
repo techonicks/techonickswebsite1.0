@@ -8,14 +8,14 @@ import githubLogo from '@/assets/icons/githubLogo.svg'
 import instagramLogo from '@/assets/icons/instagramLogo.svg'
 import linkedinLogo from '@/assets/icons/linkedinLogo.svg'
 import youtubeLogo from '@/assets/icons/youtubeLogo.svg'
-import mail from "@/assets/icons/mail.svg"
+// import mail from "@/assets/icons/mail.svg"
 
 export const links = [
-    {
-        logo:mail,
-        src:"techonickscgec23@gmail.com",
-        name:"Mail"
-    },
+    // {
+    //     logo:mail,
+    //     src:"mailto://techonickscgec23@gmail.com",
+    //     name:"Mail"
+    // },
     {
         logo:discordLogo,
         src: 'https://discord.gg/MbHfQjZ5Wx',
