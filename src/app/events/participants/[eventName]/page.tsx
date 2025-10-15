@@ -1,8 +1,13 @@
 import { getParticipantsByEventName } from "@/app/_actions/getParticipants/actions";
 import ParticipantsList from "@/components/Events/ParticipantsList";
+import { redirect } from "next/navigation";
 import React from "react";
 
 const page = async ({ params }: { params: { eventName: string } }) => {
+
+  // Temporarily Off
+  redirect("/")
+
   const { eventName } = params;
   const participants = await getParticipantsByEventName(
     eventName.trim().replaceAll("-", " ").toUpperCase()

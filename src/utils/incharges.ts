@@ -99,7 +99,7 @@ export const incharges = [
     img: javed,
     link: "leads/seikh-mahammad-javed",
     dept : "CSE",
-    desc : "As a second-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
+    desc : "As a third-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
     year : "2027",
     tenure: "2024-25",
     social: [

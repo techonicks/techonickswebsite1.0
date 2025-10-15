@@ -23,7 +23,7 @@ import aushi from '@/assets/team/aushi.png'
 import sayansarkar from '@/assets/team/sayansarkar.jpg'
 import arijit from '@/assets/team/arijit.jpg'
 import saswata from '@/assets/team/saswata.jpg'
-import raju from '@/assets/team/raju.jpg'
+import raju from '@/assets/team/raju2.jpg'
 import rakibul from '@/assets/team/rakibul.jpg'
 import fahim from '@/assets/team/fahim.jpg'
 import debanjan from '@/assets/team/debanjan.jpg'
@@ -31,8 +31,24 @@ import soumyajitbhunia from '@/assets/team/soumyajitbhunia.jpg'
 import javed from '@/assets/team/javed.jpg'
 import suvra from '@/assets/team/suvra.jpg'
 
-// Social icons
+// Extended Core 25
 
+import aniruddha from "@/assets/team/aniruddha.jpg"
+import rishav from "@/assets/team/rishav.jpg"
+import sahil from "@/assets/team/sahil.jpg"
+import subham from "@/assets/team/subham.jpg"
+import rajat from "@/assets/team/rajat.jpg"
+import parthiv from "@/assets/team/parthiv.jpg"
+import debojit from "@/assets/team/debojit.jpg"
+import pial from "@/assets/team/pial.jpg"
+import utsav from "@/assets/team/utsav.webp"
+import krishnendhu from "@/assets/team/krishnendu.webp"
+import pranay from "@/assets/team/pranay.jpg"
+import harasundar from "@/assets/team/harasundar.jpg"
+import prithwiraj from "@/assets/team/prithwiraj.jpg"
+
+// Social icons
+import facebookLogo from "@/assets/icons/facebookLogo.svg"
 import githubLogo from "@/assets/icons/githubLogo.svg";
 import instagramLogo from "@/assets/icons/instagramLogo.svg";
 import linkedinLogo from "@/assets/icons/linkedinLogo.svg";
@@ -83,7 +99,7 @@ export const members = [
     img: mrittika,
     link: "core-team-23/mrittika-dutta",
     dept: "CSE",
-    desc: "I am Mrittika Dutta 3rd year Computer Science and Engineering student with keen interest in technology and enjoys exploring the latest innovations in the digital world.",
+    desc: "I am Mrittika Dutta 4th year Computer Science and Engineering student with keen interest in technology and enjoys exploring the latest innovations in the digital world.",
     year: "2026",
     social: [
       {
@@ -105,7 +121,7 @@ export const members = [
     img: samrat,
     link: "core-team-23/samrat-mondal",
     dept: "ME",
-    desc: "Hello , I am Samrat Mondal from mechanical department 3rd year , with a immense desire to know about Web development and DSA",
+    desc: "Hello , I am Samrat Mondal from mechanical department 4th year , with a immense desire to know about Web development and DSA",
     year: "2026",
     social: [
       {
@@ -127,7 +143,7 @@ export const members = [
     img: sourav,
     link: "core-team-23/sourav-kumar",
     dept: "CSE",
-    desc: "Hello..I am Sourav Kumar... currently I am in 3rd year CSE department... I have a strong understanding of Cloud Computing and a solid grasp of data structures and algorithms. I am highly enthusiastic about working with cloud systems",
+    desc: "Hello..I am Sourav Kumar... currently I am in 4th year CSE department... I have a strong understanding of Cloud Computing and a solid grasp of data structures and algorithms. I am highly enthusiastic about working with cloud systems",
     year: "2026",
     social: [
       {
@@ -190,7 +206,7 @@ export const members = [
     img : raju,
     link : 'team/raju-biswas',
     dept : "ME",
-    desc : "Hello, This is Raju Biswas, a second-year Mechanical Engineering student of CGEC. Driven by a passion for continuous skill enhancement and technical exploration, I am eager to delve into innovative projects and uncover opportunities that fuel my enthusiasm for technology. My goal is to grow as a dedicated tech enthusiast and make meaningful contributions to the engineering field.",
+    desc : "Engineering is where imagination meets innovation — turning curiosity into creation and transforming ideas into real-world solutions. I love being the one who builds that bridge.",
     year : "2027",
     social : [
       {
@@ -372,7 +388,7 @@ export const members = [
     img : javed,
     link : 'team/seikh-mahammad-javed',
     dept : "CSE",
-    desc : "As a second-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
+    desc : "As a third-year Software Engineering student, I am deeply passionate about technology and software development. With proficiency in C, Java, and Python, I have a solid foundation in programming languages and problem-solving. I am currently focusing on developing cross-platform applications using Flutter, a skill that allows me to create seamless mobile experiences for both iOS and Android.",
     year : "2027",
     social : [
       {
@@ -384,5 +400,263 @@ export const members = [
         link : "https://www.instagram.com/__j_a_v_e_d_/"
       }
     ]
+  },
+
+  // Team 25
+
+  {
+    title : "Aniruddha Ghosh",
+    img : aniruddha,
+    link : '/team/extended-core-25/aniruddha-ghosh',
+    dept : "CSE",
+    desc : "I’m Anirudha Ghosh. I’m a student at Cooch Behar Government Engineering College and a member of the Tech O Nicks Club. I’m passionate about technology, especially AI, web development.",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/anirudha-ghosh-b5b3892b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : facebookLogo,
+        link : "https://www.facebook.com/share/1MnwwmSJih/"
+      },
+    ]
+  },
+  {
+    title : "Rishav Prasad",
+    img : rishav,
+    link : '/team/extended-core-25/rishav-prasad',
+    dept : "CSE",
+    desc : "Inspired by idea, powered by code and focused on progress",
+    year : "2028",
+    social : [
+      {
+        logo : githubLogo,
+        link : "https://github.com/Rishav0523"
+      },
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/rishav-prasad-"
+      },
+    ]
+  },
+  {
+    title : "SK Sahil Akhtar",
+    img : sahil,
+    link : '/team/extended-core-25/sk-sahil-akhtar',
+    dept : "ECE",
+    desc : "Blending logic and creativity to build the future",
+    year : "2028",
+    social : [
+      {
+        logo : githubLogo,
+        link : "https://github.com/SKSAHILAKHTAR1"
+      },
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/s-k-sahil-akhtar-69528724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/sksahilakhtar1?igsh=MWFiNnVoMmJ2Y3dhZw=="
+      },
+      {
+        logo : facebookLogo,
+        link : "https://www.facebook.com/share/17fqdPcJbq/"
+      }
+    ]
+  },
+  {
+    title : "Subham Jana",
+    img : subham,
+    link : '/team/extended-core-25/subham-jana',
+    dept : "ECE",
+    desc : "An enthusiastic student passionate about exploring the intersection of hardware and software, combining my knowledge of C and Java programming with electronics to design smarter and more efficient systems.",
+    year : "2028",
+    social : [
+      {
+        logo : githubLogo,
+        link : "https://github.com/Subhamjana"
+      },
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/subham-jana-3413b5327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/subh.am_jana07?igsh=MW1kNWthYWh1bHRsbA=="
+      },
+      {
+        logo : facebookLogo,
+        link : "https://www.facebook.com/share/16ovrzgz4e/"
+      }
+    ]
+  },
+   {
+    title : "Rajat Mondal",
+    img : rajat,
+    link : '/team/extended-core-25/rajat-mondal',
+    dept : "CSE",
+    desc : "Where creativity meets logic — I design, I code, and I bring ideas to life",
+    year : "2028",
+    social : [
+      {
+        logo : githubLogo,
+        link : "https://github.com/RajatMondal45264"
+      },
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/rajat-mondal-707b19239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+    ]
+  },
+     {
+    title : "Parthiv Bania",
+    img : parthiv,
+    link : '/team/extended-core-25/parthiv-bania',
+    dept : "CSE",
+    desc : "Progress starts today.",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/parthiv-bania-073831314/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA8LMWOkJRoebJvgEvD4cJw%3D%3D"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/itz__parthiv?utm_source=qr"
+      },
+    ]
+  },
+  {
+    title : "Debojit Das",
+    img : debojit,
+    link : '/team/extended-core-25/debojit-das',
+    dept : "ME",
+    desc : "Ctrl + Alt + Conquer",
+    year : "2028",
+    social : [
+      {
+        logo : githubLogo,
+        link : "https://github.com/offx-sayan"
+      },
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/debojit-das-560b33371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://instagram.com/offx.sayan"
+      },
+    ]
+  },
+  {
+    title : "PIAL SAHA",
+    img : pial,
+    link : '/team/extended-core-25/pial-saha',
+    dept : "ECE",
+    desc : "I’m a tech enthusiast with a passion for building innovative and practical projects. I love exploring new technologies and turning creative ideas into real working solutions.",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/pial-saha-a0333a331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/sppial17?igsh=MXdnNGY0Z3JtdTlqMA=="
+      },
+    ]
+  },
+  {
+    title : "Utsav Pal",
+    img : utsav,
+    link : '/team/extended-core-25/utsav-pal',
+    dept : "CSE",
+    desc : "Veni      Vidi      Vici ",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://in.linkedin.com/in/utsav-pal-sp2395"
+      },
+    ]
+  },
+  {
+    title : "Krishnendu Paul",
+    img : krishnendhu,
+    link : '/team/extended-core-25/krishnendu-paul',
+    dept : "ECE",
+    desc : "Turning Ideas into Intelligent Circuits. Code. Circuit. Conquer..",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/krishnendu-paul-622a48322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/krishnendupaul264?igsh=aTNkMGk2dGkxaWhs"
+      },
+      {
+        logo : facebookLogo,
+        link : "https://www.facebook.com/share/1Gm5iS8xxF/"
+      }
+    ]
+  },
+  {
+    title : "Pranay Hazra",
+    img : pranay,
+    link : '/team/extended-core-25/pranay-hazra',
+    dept : "CE",
+    desc : "Breaking the orthodox — a Civilian in Robotics",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/pranay-hazra-308913333"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/_pranayyy_.0?igsh=MXYxaDdjMjZsYjNwOA=="
+      },
+      {
+        logo : facebookLogo,
+        link : "https://www.facebook.com/share/1BESLiLZCH/"
+      }
+    ]
+  },
+  {
+    title : "Harasundar Patra",
+    img : harasundar,
+    link : '/team/extended-core-25/harasundar-parta',
+    dept : "ME",
+    desc : "Do something new",
+    year : "2028",
+    social : [
+      {
+        logo : linkedinLogo,
+        link : "https://www.linkedin.com/in/harasundar-patra-a7162b332?trk=contact-info"
+      },
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/harasundar_?igsh=MTI0Ynp2ejdxdjdtNw=="
+      }
+    ]
+  },
+  {
+    title : "Prithwiraj Sarkar",
+    img : prithwiraj,
+    link : '/team/extended-core-25/prithwiraj-sarkar',
+    dept : "ME",
+    desc : "Drones and Photography Enthusiast.",
+    year : "2028",
+    social : [
+      {
+        logo : instagramLogo,
+        link : "https://www.instagram.com/prithwirajsarkar2004?igsh=ajY3bmI2Z3lnZGhm"
+      }
+    ]
   }
+  
 ];

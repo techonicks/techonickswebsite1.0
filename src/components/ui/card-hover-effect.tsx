@@ -120,6 +120,6 @@ export const CardImage = ({
     img:string
   }) => {
     return (
-        <Image src={img} alt="img" className="max-w-44" priority placeholder="blur"/>
+        <Image src={img} alt="img" className="max-w-44 h-44 object-cover" priority placeholder="blur"/>
     );
   };

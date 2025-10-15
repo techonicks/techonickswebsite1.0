@@ -9,12 +9,14 @@ const HeroSection = ({year}:{year:string}) => {
       <div className="max-w-2xl mx-auto p-4">
         <h1 className="relative z-10  text-2xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
           {
-            year === "2027" ? <span className="line-clamp-5 text-center">Core Team <br /> 24</span> : <span className="line-clamp-5 text-center">Core Team <br /> 23</span>
+            year === "2027" ? <span className="line-clamp-5 text-center">Core Team <br /> 24</span> : year === "2028" ? <span className="line-clamp-5 text-center">Extended Core Team <br /> 25</span> : <span className="line-clamp-5 text-center">Core Team <br /> 23</span>
           }
         </h1>
       </div>
       <Profiles year={year}/>
       <Link href={`/team/${year === "2027"? "core-team-23" : ""}`} className="md:text-3xl sm:text-xl bg-cyan-900 font-semibold px-4 py-2 self-center z-10 relative rounded-md ">{year === "2027" ? "Core Team 23" : "Core Team 24"}</Link>
+
+      <Link href={`/team/${year === "2028"? "core-team-23" : "extended-core-25"}`} className="md:text-3xl sm:text-xl bg-cyan-900 font-semibold px-4 py-2 self-center z-10 relative rounded-md mt-6">{year === "2028" ? "Core Team 23" : "Extended Core Team"}</Link>
       <BackgroundBeams />
     </div>
   );

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
-const MemberList = async () => {
+const MemberList = () => {
   const [members, setMembers] = useState<
     {
       name: string;

@@ -1,8 +1,13 @@
 import { getEventByName } from '@/app/_actions/getEvents/action'
 import EventRegistrationForm from '@/components/Registration/RegistrationForm'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const page = async() => {
+
+  // Temporarily Off
+  redirect("/")
+
   return (
     <main className='mt-[120px] min-h-[75vh] py-8 px-4 sm:px-6 md:px-10 lg:px-20'>
         <h1 className='text-2xl md:text-4xl'>Registration of Followings events are going on</h1>

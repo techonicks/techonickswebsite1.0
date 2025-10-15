@@ -1,7 +1,12 @@
 import { getEvents } from "@/app/_actions/getEvents/action";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 const page = async({ params }: any) => {
+
+  // Temporarily Off
+  redirect("/")
+
   const { id } = params;
 
   const events = await getEvents()
